@@ -516,12 +516,6 @@ TrigonTab:AddButton({
   	end    
 })
 TrigonTab:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		game:getService('Players'):chat('-gh ')
-  	end    
-})
-TrigonTab:AddButton({
 	Name = "Ass Shitter",
 	Callback = function()
       		game:getService('Players'):chat('-gh 10911958, 11142504, 3806215779')
