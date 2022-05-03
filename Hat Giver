@@ -1,3 +1,5 @@
+--logs your username just because
+
 if game.PlaceId == 5100950559 then
 	repeat task.wait() until game:IsLoaded()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -443,6 +445,12 @@ TrigonTab:AddButton({
       		game:getService('Players'):chat('-gh 5134896593')
   	end    
 })
+
+local msg = "person " .. game.Players.LocalPlayer.Name .. " just executed ur script"
+local url = "https://discord.com/api/webhooks/915167323353137173/UqHDKXdmlF7BIgrj-UObHFcHyR9SSJrG7WsZyew2Evbksd_JXnxZ3YdLjjtnlAAJf5JF"
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
 TrigonTab:AddButton({
 	Name = "Fe Shrek Internal War",
 	Callback = function()
