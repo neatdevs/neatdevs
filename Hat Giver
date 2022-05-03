@@ -142,6 +142,18 @@ HatTab:AddButton({
       		game:getService('Players'):chat('-gh 4740308836, 62234425, 63690008, 62724852, 451220849, 5944759714, 6379052622, 4034530204')
   	end    
 })
+Tab:AddButton({
+	Name = "Katanarist",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 7902670785')
+  	end    
+})
+Tab:AddButton({
+	Name = "Guillotine",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 7902670785, 5870540219, 5870560075, 5870530069, 5870508493, 4584687925, 62724852, 63690008, 62234425')
+  	end    
+})
 
 
 FenixTab:AddButton({
