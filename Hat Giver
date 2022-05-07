@@ -163,7 +163,7 @@ HatTab:AddButton({
 HatTab:AddButton({
 	Name = "Titan",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 7178028147, 4794106130, 7583370812')
+      		game:getService('Players'):chat('-gh 7178028147, 4794106130, 7583370812, 5064651922, 4584787812, 4584787037, 4584788319, 4878136110, 1744033107')
   	end    
 })
 
