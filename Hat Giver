@@ -41,12 +41,6 @@ HatTab:AddButton({
   	end    
 })
 HatTab:AddButton({
-	Name = "Normal Rig",
-	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 3409612660, 62234425, 63690008, 62724852, 451220849')
-  	end    
-})
-HatTab:AddButton({
 	Name = "Big Rig",
 	Callback = function()
       		game:getService('Players'):chat('-gh 5064651922, 4584787812, 4584787037, 4584788319, 4878136110, 1744033107')
@@ -61,7 +55,7 @@ HatTab:AddButton({
 HatTab:AddButton({
 	Name = "Halo Gunner",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 3409612660, 62234425, 63690008, 62724852, 451220849, 5134896593, 5164319493, 4504231783')
+      		game:getService('Players'):chat('-gh 5134896593, 5164319493, 4504231783')
   	end    
 })
 HatTab:AddButton({
@@ -73,55 +67,55 @@ HatTab:AddButton({
 HatTab:AddButton({
 	Name = "Fairy",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 62234425, 63690008, 62724852, 451220849, 6133142040, 4458601937, 4506945409, 4315489767, 4794315940')
+      		game:getService('Players'):chat('-gh 4458601937, 4506945409, 4315489767, 4794315940')
   	end    
 })
 HatTab:AddButton({
 	Name = "Fire Gremlin",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 62234425, 63690008, 62724852, 451220849, 4881917202, 6937439191, 6114870953, 6114849049, 6114844034')
+      		game:getService('Players'):chat('-gh 4881917202, 6114870953, 6114849049, 6114844034')
   	end    
 })
 HatTab:AddButton({
 	Name = "Soldier",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 62234425, 63690008, 62724852, 451220849, 6410489629, 5028569767, 4584649983, 5100070995, 4504231783')
+      		game:getService('Players'):chat('-gh 6410489629, 5100070995, 4504231783')
   	end    
 })
 HatTab:AddButton({
 	Name = "Hammer",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 3409612660, 62234425, 63690008, 62724852, 451220849, 4524454577')
+      		game:getService('Players'):chat('-gh 6379052622')
   	end    
 })
 HatTab:AddButton({
 	Name = "Minigun",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 62234425, 63690008, 62724852, 451220849, 4584649983, 5028569767, 5154115297, 4504231783')
+      		game:getService('Players'):chat('-gh 5154115297, 4504231783')
   	end    
 })
 HatTab:AddButton({
-	Name = "Jevil",
+	Name = "Jevil, now prints it's free",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 62234425, 63690008, 62724852, 451220849, 5829882544')
+      		print("it's free")
   	end    
 })
 HatTab:AddButton({
 	Name = "Zen",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 3409612660, 62234425, 63690008, 62724852, 451220849, 4753300133, 3443038622, 3499972183, 4645400486')
+      		game:getService('Players'):chat('-gh 4753300133, 3443038622, 3499972183, 4645400486, 3409612660')
   	end    
 })
 HatTab:AddButton({
-	Name = "Animation Man",
+	Name = "Animation Man, does nothing but prints",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 3409612660, 62234425, 63690008, 62724852, 451220849')
+      		print("it's free")
   	end    
 })
 HatTab:AddButton({
 	Name = "Dog",
 	Callback = function()
-      		game:getService('Players'):chat('-gh 4740308836, 62234425, 63690008, 62724852, 451220849, 151784320, 3806215779, 12565541, 11679229, 7790955686')
+      		game:getService('Players'):chat('-gh 3806215779, 12565541, 11679229')
   	end    
 })
 HatTab:AddButton({
@@ -164,6 +158,24 @@ HatTab:AddButton({
 	Name = "Titan",
 	Callback = function()
       		game:getService('Players'):chat('-gh 7178028147, 4794106130, 7583370812, 5064651922, 4584787812, 4584787037, 4584788319, 4878136110, 1744033107')
+  	end    
+})
+HatTab:AddButton({
+	Name = "Ramp Buggy",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 4315489767, 4794315940, 4506945409, 451220849, 62724852, 63690008, 62234425')
+  	end    
+})
+HatTab:AddButton({
+	Name = "Road Rogue",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 5063566353, 5410643866, 4504231783')
+  	end    
+})
+HatTab:AddButton({
+	Name = "Goku",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 4753437569, 8656393573, 7770042353, 4904049189, 4933088478')
   	end    
 })
 
