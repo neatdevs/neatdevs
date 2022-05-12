@@ -11,7 +11,7 @@ OrionLib:MakeNotification({
 local Window = OrionLib:MakeWindow({Name = "Hat Giver! Just Grass", HidePremium = true, SaveConfig = true, ConfigFolder = "There are no configs"})
 
 local HatTab = Window:MakeTab({
-	Name = "Hat Hub",
+	Name = "Hat Hub v3",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
