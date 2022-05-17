@@ -7,6 +7,12 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+OrionLib:MakeNotification({
+	Name = "Script has Updated",
+	Content = "Last update was 18/05/2022",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
 
 local Window = OrionLib:MakeWindow({Name = "Hat Giver! Just Grass", HidePremium = true, SaveConfig = true, ConfigFolder = "There are no configs"})
 
@@ -176,6 +182,18 @@ HatTab:AddButton({
 	Name = "Goku",
 	Callback = function()
       		game:getService('Players'):chat('-gh 4753437569, 8656393573, 7770042353, 4904049189, 4933088478')
+  	end    
+})
+HatTab:AddButton({
+	Name = "Jiggle Neko",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 20011897, 12548563, 4641686175')
+  	end    
+})
+HatTab:AddButton({
+	Name = "Floppy Dick",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 6114870953, 6114875330, 6114849049, 6114844034, 4997846903, 4997844664')
   	end    
 })
 
