@@ -9,7 +9,7 @@ OrionLib:MakeNotification({
 })
 OrionLib:MakeNotification({
 	Name = "Script has Updated",
-	Content = "Last update was 18/05/2022",
+	Content = "Last update was 22/05/22",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -327,7 +327,7 @@ FenixTab:AddButton({
 FenixTab:AddButton({
 	Name = "Sofa Room",
 	Callback = function()
-		game:getService('Players'):chat('-gh 4940503634, 5591760397, 8163032656, 4793958453, 4878136110, 4584788319, 4584787037, 4585144193, 4332375148')
+		game:getService('Players'):chat('-gh 5591760397, 8163032656, 4793958453, 4878136110, 4584788319, 4584787037, 4585144193, 4332375148')
   	end    
 })
 FenixTab:AddButton({
