@@ -196,6 +196,18 @@ HatTab:AddButton({
       		game:getService('Players'):chat('-gh 6114870953, 6114875330, 6114849049, 6114844034, 4997846903, 4997844664')
   	end    
 })
+HatTab:AddButton({
+	Name = "Snake",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 5411702474, 5411703923')
+  	end    
+})
+HatTab:AddButton({
+	Name = "Bong",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 7292595416, 3756389957, 7178028147, 20011897, 6114849049, 6114844034, 5205483683')
+  	end    
+})
 
 
 FenixTab:AddButton({
