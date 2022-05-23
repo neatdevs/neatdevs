@@ -9,7 +9,7 @@ OrionLib:MakeNotification({
 })
 OrionLib:MakeNotification({
 	Name = "Script has Updated",
-	Content = "Last update was 22/05/22",
+	Content = "Last update was 23/05/22",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
