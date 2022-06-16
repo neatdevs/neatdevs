@@ -8,8 +8,8 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 OrionLib:MakeNotification({
-	Name = "Script has Updated",
-	Content = "Last update was 23/05/22",
+	Name = "Updated 16/06/22",
+	Content = "Added Nullware Hats!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -23,6 +23,12 @@ local HatTab = Window:MakeTab({
 })
 local FenixTab = Window:MakeTab({
 	Name = "FEnix",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local NullTab = Window:MakeTab({
+	Name = "NullWare",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -664,6 +670,69 @@ TrigonTab:AddButton({
 	Name = "R15 Semi Bot Reanimation",
 	Callback = function()
       		game:getService('Players'):chat('-gh 6380246734, 8156020847')
+  	end    
+})
+
+NullTab:AddButton({
+	Name = "Aiju Love Trap Rifle",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 5410482351')
+  	end    
+})
+
+NullTab:AddButton({
+	Name = "CKBackup's Cop",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 6995534747, 4776608503')
+  	end    
+})
+
+NullTab:AddButton({
+	Name = "Cyber Duelist",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 6203508889, 6203503410')
+  	end    
+})
+
+NullTab:AddButton({
+	Name = "Cyber Shooter",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 6202087882, 6202097932')
+  	end    
+})
+
+NullTab:AddButton({
+	Name = "Cyber Hammer",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 4739580137')
+  	end    
+})
+
+NullTab:AddButton({
+	Name = "Elio Blasio",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 4962455546')
+  	end    
+})
+
+NullTab:AddButton({
+	Name = "Neptunian V",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 5355685721')
+  	end    
+})
+
+NullTab:AddButton({
+	Name = "Sniper",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 5063578607')
+  	end    
+})
+
+NullTab:AddButton({
+	Name = "Zenith Battle Rifle-70",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 6703871350, 4684948729')
   	end    
 })
 
