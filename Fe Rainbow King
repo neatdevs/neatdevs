@@ -19,8 +19,8 @@ setting both to false or both to true will result in you just ReAnimating
 also, i think this only works with synapse im not sure
 ]]
  
-local GodCat = true
-local RainbowKing = false
+local GodCat = false
+local RainbowKing = true
  
 --Net--
  
