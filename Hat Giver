@@ -8,8 +8,8 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 OrionLib:MakeNotification({
-	Name = "Updated 16/06/22",
-	Content = "Added Nullware Hats!",
+	Name = "Updated 19/06/22",
+	Content = "Added Deem Support!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -40,6 +40,12 @@ local TrigonTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+local DeemTab = Window:MakeTab({
+	Name = "Deem",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 local LocalTab = Window:MakeTab({
 	Name = "Local Player",
 	Icon = "rbxassetid://4483345998",
@@ -215,6 +221,9 @@ HatTab:AddButton({
   	end    
 })
 
+local Section = FenixTab:AddSection({
+	Name = "Below are r6 only"
+})
 
 FenixTab:AddButton({
 	Name = "Ogre",
@@ -361,7 +370,9 @@ FenixTab:AddButton({
   	end    
 })
 
-FenixTab:AddLabel("Below are for R15 only!")
+local Section = FenixTab:AddSection({
+	Name = "Below are r15 only"
+})
 
 FenixTab:AddButton({
 	Name = "Samurai",
@@ -736,6 +747,14 @@ NullTab:AddButton({
   	end    
 })
 
+DeemTab:AddButton({
+	Name = "GodCat/Rainbow King",
+	Callback = function()
+      		game:getService('Players'):chat('-gh 6154922496, 5100070995, 4087527067, 451220849, 48474294, 63690008, 62724852, 62234425, 48474313')
+  	end    
+})
+
+DeemTab:AddParagraph("FE Rock","FE Rock requires any hats but the more the better")
 
 LocalTab:AddButton({
 	Name = "GR",
