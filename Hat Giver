@@ -788,7 +788,7 @@ LPsection:Button{
 }
 
 
-library:Close()
+
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/neatdevs/Deems-Stuff/main/Loadstring')))()
 end
