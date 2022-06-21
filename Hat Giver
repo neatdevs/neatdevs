@@ -4,8 +4,8 @@ if game.PlaceId == 5100950559 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
     OrionLib:MakeNotification({
-        Name = "Updated 21/06/22",
-        Content = "UI Lib changed! (still using orion for noti's)",
+        Name = "Updated 22/06/22",
+        Content = "Added Scythe for Trigon!",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
@@ -743,6 +743,12 @@ Trsection:Button{
     Name = "Gun Titan",
     Callback  = function()
         game:getService('Players'):chat('-gh 4584787812, 4686259183, 1744033107, 4584788319, 4584787037, 4878136110, 4623059912, 63690008')
+    end
+}
+Trsection:Button{
+    Name = "Scythe",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 5414429551, 63690008')
     end
 }
 Trsection:Button{
