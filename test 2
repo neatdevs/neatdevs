@@ -1,4 +1,4 @@
-while wait() do
+while wait(0.0000000001) do
 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
             if v:IsA("BasePart") and
             v.Name == "Left Arm" then
