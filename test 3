@@ -1,0 +1,7 @@
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA("BasePart") and
+            v.Name == "Left Arm" or
+            v.Name == "Right Arm" then
+            v.Transparency = 0.5
+end
+end
