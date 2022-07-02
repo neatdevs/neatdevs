@@ -48,7 +48,6 @@ local Hvsection = HatHub:Section{
     Side = "right"
 }
 
-
 local FEsection = Fenix:Section{
     Name = "FEnix",
     Side = "Left"
@@ -78,7 +77,7 @@ local Dsection = Deem:Section{
     Side = "Left"
 }
 
-local HBsection = HatHub:Section{
+local HBsection = HB:Section{
     Name = "HomeBrew",
     Side = "Left"
 }
