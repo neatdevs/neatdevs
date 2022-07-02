@@ -4,8 +4,8 @@ if game.PlaceId == 5100950559 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
     OrionLib:MakeNotification({
-        Name = "Updated 22/06/22",
-        Content = "Added Scythe for Trigon!",
+        Name = "Updated! 03/07/22",
+        Content = "Added support for the new HomeBrew admin!",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
@@ -34,6 +34,8 @@ local Null = main:tab("Nullware")
 local Tri = main:tab("Trigon")
 
 local Deem = main:tab("Deem")
+
+local HB = main:tab("HomeBrew")
 
 local Localp = main:tab("Localp")
 
@@ -73,6 +75,11 @@ local Trsection = Tri:Section{
 
 local Dsection = Deem:Section{
     Name = "Deem",
+    Side = "Left"
+}
+
+local HBsection = HatHub:Section{
+    Name = "HomeBrew",
     Side = "Left"
 }
 
@@ -766,6 +773,104 @@ Dsection:Button{
     end
 }
 local label = Dsection:Label("FE Rock requires any hats but the more the better")
+
+--HomeBrew Admin
+HBsection:Button{
+    Name = "r6 aka reanimation",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 62724852')
+    end
+}
+HBsection:Button{
+    Name = "nep/nep2",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4315489767')
+    end
+}
+HBsection:Button{
+    Name = "duck",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4820447344')
+    end
+}
+HBsection:Button{
+    Name = "hover",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4641745315')
+    end
+}
+HBsection:Button{
+    Name = "pillow",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4964938812')
+    end
+}
+HBsection:Button{
+    Name = "abypss",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4820152700')
+    end
+}
+HBsection:Button{
+    Name = "lustris",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4315489767')
+    end
+}
+HBsection:Button{
+    Name = "Katana",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4315489767')
+    end
+}
+HBsection:Button{
+    Name = "gun",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4962455546')
+    end
+}
+HBsection:Button{
+    Name = "bantitan",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4878136110, 1744033107, 4584788319, 4584787812, 4584787037, 4686259183, 4623728953, 4739580137')
+    end
+}
+HBsection:Button{
+    Name = "banhammer",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4739580137')
+    end
+}
+HBsection:Button{
+    Name = "neptunianv2",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4794315940, 4623059912, 4504231783')
+    end
+}
+HBsection:Button{
+    Name = "sniper",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 321570270, 451220849, 63690008, 62724852, 62234425, 29532720, 5063578607, 4904654004, 4684948729, 4504231783')
+    end
+}
+HBsection:Button{
+    Name = "syntax glitcher",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4315489767, 4794315940, 4506945409, 4458601937, 4773883146, 4773932088, 4855847190')
+    end
+}
+HBsection:Button{
+    Name = "Ironman",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4584649983, 4904137145, 5199855779, 5199860808, 4466171123, 191101707, 4504231783, 4466171123')
+    end
+}
+HBsection:Button{
+    Name = "ball",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 7137248778')
+    end
+}
 
 --LocalPlayer
 LPsection:Button{
