@@ -243,6 +243,12 @@ Hvsection:Button{
         game:getService('Players'):chat('-gh 7292595416, 3756389957, 7178028147, 20011897, 6114849049, 6114844034, 5205483683')
     end
 }
+Hvsection:Button{
+    Name = "Achromeda",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 6202663797, 6202665143, 6202669222, 6202670464, 6202662855, 6202666587, 5355685721')
+    end
+}
 
 --FEnix
 local seperator = FEsection:Separator("Below are R6 only!")
