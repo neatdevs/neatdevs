@@ -4,8 +4,8 @@ if game.PlaceId == 5100950559 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
     OrionLib:MakeNotification({
-        Name = "Updated! 03/07/22",
-        Content = "Added support for the new HomeBrew admin!",
+        Name = "Updated! 07/07/22",
+        Content = "Added Achromeda for HatHub!",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
