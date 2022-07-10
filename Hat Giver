@@ -4,8 +4,8 @@ if game.PlaceId == 5100950559 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
     OrionLib:MakeNotification({
-        Name = "Updated! 07/07/22",
-        Content = "Added Achromeda for HatHub!",
+        Name = "Updated! 10/07/22",
+        Content = "Added star glitcher to Trigon!",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
@@ -761,6 +761,12 @@ Trsection:Button{
     Name = "Scythe",
     Callback  = function()
         game:getService('Players'):chat('-gh 5414429551, 63690008')
+    end
+}
+Trsection:Button{
+    Name = "star glitcher",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 4315489767, 4820152700, 4794315940, 4506945409, 4458601937, 4524991457, 4773932088')
     end
 }
 Trsection:Button{
