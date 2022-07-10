@@ -5,7 +5,7 @@ if game.PlaceId == 5100950559 then
 
     OrionLib:MakeNotification({
         Name = "Updated! 10/07/22",
-        Content = "Added star glitcher to Trigon!",
+        Content = "Added star glitcher to Trigon and Beannator to HatHub!",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
@@ -145,6 +145,12 @@ HHsection:Button{
     Name = "Minigun",
     Callback  = function()
         game:getService('Players'):chat('-gh 5154115297, 4504231783')
+    end
+}
+HHsection:Button{
+    Name = "Beannator",
+    Callback  = function()
+        game:getService('Players'):chat('-gh 5164319493, 4504231783')
     end
 }
 Hvsection:Button{
