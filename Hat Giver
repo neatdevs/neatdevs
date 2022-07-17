@@ -4,8 +4,8 @@ if game.PlaceId == 5100950559 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
     OrionLib:MakeNotification({
-        Name = "Updated! 10/07/22",
-        Content = "Added star glitcher to Trigon and Beannator to HatHub!",
+        Name = "Roblox has patched the chat script used in hat giver 18/07/2022",
+        Content = ":sad:",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
