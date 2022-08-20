@@ -498,14 +498,14 @@ Client.TextColor3 = Color3.fromRGB(255, 255, 255)
 Client.TextSize = 20.000
 Client.TextWrapped = true
 
-Luner.Name = "Luner"
+Luner.Name = "Lunar"
 Luner.Parent = ShitClientHolder
 Luner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Luner.BackgroundTransparency = 1.000
 Luner.Position = UDim2.new(0.042755127, 0, 0.559322, 0)
 Luner.Size = UDim2.new(0, 124, 0, 24)
 Luner.Font = Enum.Font.GothamBold
-Luner.Text = "Luner Client"
+Luner.Text = "Lunar Client"
 Luner.TextColor3 = Color3.fromRGB(255, 255, 255)
 Luner.TextSize = 20.000
 Luner.TextWrapped = true
