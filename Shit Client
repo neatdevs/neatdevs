@@ -1,0 +1,512 @@
+--Welcome to shit client
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Holder = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Mods = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local WIP = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local WIP_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local close = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+local SideHoe = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local ScriptHolder = Instance.new("Frame")
+local ZoomHolder = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local search = Instance.new("ImageButton")
+local ZoomTitle = Instance.new("TextLabel")
+local Zoom = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local AFKHolder = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local mood = Instance.new("ImageButton")
+local AFK = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local AFKTitle = Instance.new("TextLabel")
+local KickHolder = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local pets = Instance.new("ImageButton")
+local KickTitle = Instance.new("TextLabel")
+local Kick = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local ScriptHolder2 = Instance.new("Frame")
+local LagHolder = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local public = Instance.new("ImageButton")
+local Lag = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local LagTitle = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local ShitClientHolder = Instance.new("Frame")
+local Shit = Instance.new("TextLabel")
+local Client = Instance.new("TextLabel")
+local Luner = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Main.BackgroundTransparency = 0.500
+Main.Position = UDim2.new(0.205371246, 0, 0.269814551, 0)
+Main.Size = UDim2.new(0, 745, 0, 375)
+Main.Visible = false
+
+local UserInt = game:GetService("UserInputService")
+
+UserInt.InputBegan:Connect(function(input, gameProcessed, IsTyping)
+
+	if IsTyping then return end
+	if input.KeyCode == Enum.KeyCode.RightShift then
+		Main.Visible = true
+	end
+end)
+
+Holder.Name = "Holder"
+Holder.Parent = Main
+Holder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Holder.BackgroundTransparency = 0.500
+Holder.Position = UDim2.new(0, 0, -0.162666693, 0)
+Holder.Size = UDim2.new(0, 745, 0, 61)
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Holder
+
+Mods.Name = "Mods"
+Mods.Parent = Holder
+Mods.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+Mods.BackgroundTransparency = 0.500
+Mods.Position = UDim2.new(0.310067117, 0, 0.196721315, 0)
+Mods.Size = UDim2.new(0, 90, 0, 36)
+Mods.Font = Enum.Font.Gotham
+Mods.Text = "Mods"
+Mods.TextColor3 = Color3.fromRGB(154, 154, 154)
+Mods.TextSize = 14.000
+
+UICorner_2.Parent = Mods
+
+WIP.Name = "WIP"
+WIP.Parent = Holder
+WIP.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+WIP.BackgroundTransparency = 0.500
+WIP.Position = UDim2.new(0.464429528, 0, 0.196721315, 0)
+WIP.Size = UDim2.new(0, 90, 0, 36)
+WIP.Font = Enum.Font.Gotham
+WIP.Text = "Settings"
+WIP.TextColor3 = Color3.fromRGB(154, 154, 154)
+WIP.TextSize = 14.000
+
+UICorner_3.Parent = WIP
+
+WIP_2.Name = "WIP"
+WIP_2.Parent = Holder
+WIP_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+WIP_2.BackgroundTransparency = 0.500
+WIP_2.Position = UDim2.new(0.617449641, 0, 0.196721315, 0)
+WIP_2.Size = UDim2.new(0, 90, 0, 36)
+WIP_2.Font = Enum.Font.Gotham
+WIP_2.Text = "Waypoint"
+WIP_2.TextColor3 = Color3.fromRGB(154, 154, 154)
+WIP_2.TextSize = 14.000
+
+UICorner_4.Parent = WIP_2
+
+TextButton.Parent = Holder
+TextButton.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+TextButton.BackgroundTransparency = 0.500
+TextButton.Position = UDim2.new(0.938255072, 0, 0.262295097, 0)
+TextButton.Size = UDim2.new(0, 34, 0, 28)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+close.Name = "close"
+close.Parent = TextButton
+close.BackgroundTransparency = 1.000
+close.Position = UDim2.new(-0.0190594755, 0, 0.00984499604, 0)
+close.Size = UDim2.new(0, 34, 0, 28)
+close.ZIndex = 2
+close.Image = "rbxassetid://3926305904"
+close.ImageRectOffset = Vector2.new(284, 4)
+close.ImageRectSize = Vector2.new(24, 24)
+close.ScaleType = Enum.ScaleType.Fit
+close.MouseButton1Click:Connect(function()
+	Main.Visible = false
+end)
+
+UICorner_5.Parent = TextButton
+
+SideHoe.Name = "SideHoe"
+SideHoe.Parent = Main
+SideHoe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SideHoe.BackgroundTransparency = 0.500
+SideHoe.Position = UDim2.new(0, 0, 0.074666664, 0)
+SideHoe.Size = UDim2.new(0, 100, 0, 289)
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = SideHoe
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = Main
+
+ScriptHolder.Name = "Script Holder"
+ScriptHolder.Parent = Main
+ScriptHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptHolder.BackgroundTransparency = 1.000
+ScriptHolder.Position = UDim2.new(0.134228185, 0, 0.0159999989, 0)
+ScriptHolder.Size = UDim2.new(0, 645, 0, 180)
+
+ZoomHolder.Name = "Zoom Holder"
+ZoomHolder.Parent = ScriptHolder
+ZoomHolder.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+ZoomHolder.BackgroundTransparency = 0.500
+ZoomHolder.Position = UDim2.new(0.0248062015, 0, 0, 0)
+ZoomHolder.Size = UDim2.new(0, 183, 0, 180)
+
+UICorner_8.Parent = ZoomHolder
+
+search.Name = "search"
+search.Parent = ZoomHolder
+search.BackgroundTransparency = 1.000
+search.Position = UDim2.new(0.248633891, 0, 0.122222222, 0)
+search.Size = UDim2.new(0, 91, 0, 75)
+search.ZIndex = 2
+search.Image = "rbxassetid://3926305904"
+search.ImageRectOffset = Vector2.new(964, 324)
+search.ImageRectSize = Vector2.new(36, 36)
+search.ScaleType = Enum.ScaleType.Fit
+
+ZoomTitle.Name = "ZoomTitle"
+ZoomTitle.Parent = ZoomHolder
+ZoomTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZoomTitle.BackgroundTransparency = 1.000
+ZoomTitle.Position = UDim2.new(0, 0, 0.538888872, 0)
+ZoomTitle.Size = UDim2.new(0, 183, 0, 36)
+ZoomTitle.Font = Enum.Font.Gotham
+ZoomTitle.Text = "Zoom"
+ZoomTitle.TextColor3 = Color3.fromRGB(154, 154, 154)
+ZoomTitle.TextScaled = true
+ZoomTitle.TextSize = 20.000
+ZoomTitle.TextWrapped = true
+
+Zoom.Name = "Zoom"
+Zoom.Parent = ZoomHolder
+Zoom.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Zoom.Position = UDim2.new(0, 0, 0.722222209, 0)
+Zoom.Size = UDim2.new(0, 183, 0, 50)
+Zoom.Font = Enum.Font.Gotham
+Zoom.Text = "Enable"
+Zoom.TextColor3 = Color3.fromRGB(255, 255, 255)
+Zoom.TextSize = 30.000
+Zoom.TextWrapped = true
+Zoom.MouseButton1Click:Connect(function()
+	local cam = game.Workspace.Camera
+	local plr = game.Players.LocalPlayer
+
+	local UserInt = game:GetService("UserInputService")
+
+	UserInt.InputBegan:Connect(function(input, gameProcessed, IsTyping)
+
+		if IsTyping then return end
+		if input.KeyCode == Enum.KeyCode.C then
+			cam.FieldOfView = 30
+		end
+	end)
+
+	UserInt.InputEnded:Connect(function(input, gameProcessed, IsTyping)
+
+		if IsTyping then return end
+		if input.KeyCode == Enum.KeyCode.C then
+			cam.FieldOfView = 70
+		end
+	end)
+end)
+
+UICorner_9.Parent = Zoom
+
+AFKHolder.Name = "AFK Holder"
+AFKHolder.Parent = ScriptHolder
+AFKHolder.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+AFKHolder.BackgroundTransparency = 0.500
+AFKHolder.Position = UDim2.new(0.342635661, 0, 0, 0)
+AFKHolder.Size = UDim2.new(0, 183, 0, 180)
+
+UICorner_10.Parent = AFKHolder
+
+mood.Name = "mood"
+mood.Parent = AFKHolder
+mood.BackgroundTransparency = 1.000
+mood.LayoutOrder = 4
+mood.Position = UDim2.new(0.248633891, 0, 0.122222215, 0)
+mood.Size = UDim2.new(0, 91, 0, 75)
+mood.ZIndex = 2
+mood.Image = "rbxassetid://3926305904"
+mood.ImageRectOffset = Vector2.new(244, 804)
+mood.ImageRectSize = Vector2.new(36, 36)
+mood.ScaleType = Enum.ScaleType.Fit
+
+AFK.Name = "AFK"
+AFK.Parent = AFKHolder
+AFK.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+AFK.Position = UDim2.new(0, 0, 0.722222209, 0)
+AFK.Size = UDim2.new(0, 183, 0, 50)
+AFK.Font = Enum.Font.Gotham
+AFK.Text = "Enable"
+AFK.TextColor3 = Color3.fromRGB(255, 255, 255)
+AFK.TextSize = 30.000
+AFK.TextWrapped = true
+AFK.MouseButton1Click:Connect(function()
+	wait(500)
+
+	for i,v in pairs(getconnections(game:GetService('Players').LocalPlayer.Idled)) do
+		if v['Disable'] then
+			v['Disable'](v)
+		elseif v['Disconnect'] then
+			v['Disconnect'](v)
+		end
+	end
+end)
+
+UICorner_11.Parent = AFK
+
+AFKTitle.Name = "AFKTitle"
+AFKTitle.Parent = AFKHolder
+AFKTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AFKTitle.BackgroundTransparency = 1.000
+AFKTitle.Position = UDim2.new(0, 0, 0.538888872, 0)
+AFKTitle.Size = UDim2.new(0, 183, 0, 36)
+AFKTitle.Font = Enum.Font.Gotham
+AFKTitle.Text = "Anti Afk"
+AFKTitle.TextColor3 = Color3.fromRGB(154, 154, 154)
+AFKTitle.TextScaled = true
+AFKTitle.TextSize = 20.000
+AFKTitle.TextWrapped = true
+
+KickHolder.Name = "Kick Holder"
+KickHolder.Parent = ScriptHolder
+KickHolder.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+KickHolder.BackgroundTransparency = 0.500
+KickHolder.Position = UDim2.new(0.668217063, 0, 0, 0)
+KickHolder.Size = UDim2.new(0, 183, 0, 180)
+
+UICorner_12.Parent = KickHolder
+
+pets.Name = "pets"
+pets.Parent = KickHolder
+pets.BackgroundTransparency = 1.000
+pets.LayoutOrder = 4
+pets.Position = UDim2.new(0.248633891, 0, 0.122222215, 0)
+pets.Size = UDim2.new(0, 91, 0, 75)
+pets.ZIndex = 2
+pets.Image = "rbxassetid://3926307971"
+pets.ImageRectOffset = Vector2.new(844, 4)
+pets.ImageRectSize = Vector2.new(36, 36)
+pets.ScaleType = Enum.ScaleType.Fit
+
+KickTitle.Name = "KickTitle"
+KickTitle.Parent = KickHolder
+KickTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KickTitle.BackgroundTransparency = 1.000
+KickTitle.Position = UDim2.new(0, 0, 0.538888872, 0)
+KickTitle.Size = UDim2.new(0, 183, 0, 36)
+KickTitle.Font = Enum.Font.Gotham
+KickTitle.Text = "Anti Kick"
+KickTitle.TextColor3 = Color3.fromRGB(154, 154, 154)
+KickTitle.TextScaled = true
+KickTitle.TextSize = 20.000
+KickTitle.TextWrapped = true
+
+Kick.Name = "Kick"
+Kick.Parent = KickHolder
+Kick.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Kick.Position = UDim2.new(0, 0, 0.722222209, 0)
+Kick.Size = UDim2.new(0, 183, 0, 50)
+Kick.Font = Enum.Font.Gotham
+Kick.Text = "Enable"
+Kick.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kick.TextSize = 30.000
+Kick.TextWrapped = true
+Kick.MouseButton1Click:Connect(function()
+	local OldNameCall = nil
+	OldNameCall = hookmetamethod(game, "__namecall", newcclosure(function(Self, ...)
+		local Args = {...}
+		local NamecallMethod = getnamecallmethod()
+
+		if NamecallMethod == "Kick" or NamecallMethod == "kick" then 
+			return 
+		end
+
+		return OldNameCall(Self, ...)
+	end))
+end)
+
+UICorner_13.Parent = Kick
+
+ScriptHolder2.Name = "Script Holder 2"
+ScriptHolder2.Parent = Main
+ScriptHolder2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptHolder2.BackgroundTransparency = 1.000
+ScriptHolder2.Position = UDim2.new(0.134228185, 0, 0.517333388, 0)
+ScriptHolder2.Size = UDim2.new(0, 645, 0, 180)
+
+LagHolder.Name = "Lag Holder"
+LagHolder.Parent = ScriptHolder2
+LagHolder.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+LagHolder.BackgroundTransparency = 0.500
+LagHolder.Position = UDim2.new(0.0248062015, 0, 0, 0)
+LagHolder.Size = UDim2.new(0, 183, 0, 180)
+
+UICorner_14.Parent = LagHolder
+
+public.Name = "public"
+public.Parent = LagHolder
+public.BackgroundTransparency = 1.000
+public.LayoutOrder = 5
+public.Position = UDim2.new(0.248633891, 0, 0.150000006, 0)
+public.Size = UDim2.new(0, 91, 0, 75)
+public.ZIndex = 2
+public.Image = "rbxassetid://3926305904"
+public.ImageRectOffset = Vector2.new(604, 324)
+public.ImageRectSize = Vector2.new(36, 36)
+public.ScaleType = Enum.ScaleType.Fit
+
+Lag.Name = "Lag"
+Lag.Parent = LagHolder
+Lag.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Lag.Position = UDim2.new(0, 0, 0.722222209, 0)
+Lag.Size = UDim2.new(0, 183, 0, 50)
+Lag.Font = Enum.Font.Gotham
+Lag.Text = "Enable"
+Lag.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lag.TextSize = 30.000
+Lag.TextWrapped = true
+Lag.MouseButton1Click:Connect(function()
+	local a = game
+	local b = a.Workspace
+	local c = a.Lighting
+	local d = b.Terrain
+	d.WaterWaveSize = 0
+	d.WaterWaveSpeed = 0
+	d.WaterReflectance = 0
+	d.WaterTransparency = 0
+	c.GlobalShadows = false
+	c.FogEnd = 9e9
+	settings().Rendering.QualityLevel = "Level01"
+	for e, f in pairs(a:GetDescendants()) do
+		if f:IsA("Part") or f:IsA("Union") or f:IsA("CornerWedgePart") or f:IsA("TrussPart") then
+			f.Reflectance = 0
+		elseif f:IsA("Decal") or f:IsA("Texture") then
+			f.Transparency = 0
+		elseif f:IsA("ParticleEmitter") or f:IsA("Trail") then
+			f.Lifetime = NumberRange.new(0)
+		elseif f:IsA("Explosion") then
+			f.BlastPressure = 0
+			f.BlastRadius = 0
+		elseif f:IsA("Fire") or f:IsA("SpotLight") or f:IsA("Smoke") or f:IsA("Sparkles") then
+			f.Enabled = false
+		elseif f:IsA("MeshPart") then
+			f.Reflectance = 0
+		end
+		if f:IsA("Fire") then
+			f:Destroy()
+			wait()
+		end
+		if f:IsA("ParticleEmitter") then
+			f:Destroy()
+			wait()
+		end
+	end
+	for e, g in pairs(c:GetChildren()) do
+		if
+			g:IsA("BlurEffect") or g:IsA("SunRaysEffect") or g:IsA("ColorCorrectionEffect") or g:IsA("BloomEffect") or
+			g:IsA("DepthOfFieldEffect")
+		then
+			g.Enabled = false
+		end
+	end
+	sethiddenproperty(game.Lighting, "Technology", "Compatibility")
+end)
+
+UICorner_15.Parent = Lag
+
+LagTitle.Name = "LagTitle"
+LagTitle.Parent = LagHolder
+LagTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LagTitle.BackgroundTransparency = 1.000
+LagTitle.Position = UDim2.new(0, 0, 0.538888872, 0)
+LagTitle.Size = UDim2.new(0, 183, 0, 36)
+LagTitle.Font = Enum.Font.Gotham
+LagTitle.Text = "Anti Lag"
+LagTitle.TextColor3 = Color3.fromRGB(154, 154, 154)
+LagTitle.TextScaled = true
+LagTitle.TextSize = 20.000
+LagTitle.TextWrapped = true
+
+Frame.Parent = ScriptHolder2
+Frame.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+Frame.BackgroundTransparency = 0.500
+Frame.Position = UDim2.new(0.342635661, 0, 0, 0)
+Frame.Size = UDim2.new(0, 183, 0, 180)
+
+UICorner_16.Parent = Frame
+
+Frame_2.Parent = ScriptHolder2
+Frame_2.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+Frame_2.BackgroundTransparency = 0.500
+Frame_2.Position = UDim2.new(0.668217063, 0, 0, 0)
+Frame_2.Size = UDim2.new(0, 183, 0, 180)
+
+UICorner_17.Parent = Frame_2
+
+ShitClientHolder.Name = "ShitClient Holder"
+ShitClientHolder.Parent = ScreenGui
+ShitClientHolder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ShitClientHolder.BackgroundTransparency = 0.500
+ShitClientHolder.Position = UDim2.new(0.888625622, 0, 0.49072513, 0)
+ShitClientHolder.Size = UDim2.new(0, 124, 0, 59)
+
+Shit.Name = "Shit"
+Shit.Parent = ShitClientHolder
+Shit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shit.BackgroundTransparency = 1.000
+Shit.Position = UDim2.new(-0.0564516187, 0, 0.0508474559, 0)
+Shit.Size = UDim2.new(0, 56, 0, 24)
+Shit.Font = Enum.Font.GothamBold
+Shit.Text = "Shit"
+Shit.TextColor3 = Color3.fromRGB(85, 255, 255)
+Shit.TextSize = 20.000
+Shit.TextWrapped = true
+
+Client.Name = "Client"
+Client.Parent = ShitClientHolder
+Client.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Client.BackgroundTransparency = 1.000
+Client.Position = UDim2.new(0.34114176, 0, 0.0508474559, 0)
+Client.Size = UDim2.new(0, 56, 0, 24)
+Client.Font = Enum.Font.GothamBold
+Client.Text = "Client"
+Client.TextColor3 = Color3.fromRGB(255, 255, 255)
+Client.TextSize = 20.000
+Client.TextWrapped = true
+
+Luner.Name = "Luner"
+Luner.Parent = ShitClientHolder
+Luner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Luner.BackgroundTransparency = 1.000
+Luner.Position = UDim2.new(0.042755127, 0, 0.559322, 0)
+Luner.Size = UDim2.new(0, 124, 0, 24)
+Luner.Font = Enum.Font.GothamBold
+Luner.Text = "Luner Client"
+Luner.TextColor3 = Color3.fromRGB(255, 255, 255)
+Luner.TextSize = 20.000
+Luner.TextWrapped = true
+Luner.TextXAlignment = Enum.TextXAlignment.Left
