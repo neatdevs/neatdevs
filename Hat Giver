@@ -88,7 +88,7 @@ local SPsection = SYP:Section{
     Name = "Syntax Paid",
     Side = "Left"
 }
-local Ssection = SYP:Section{
+local Ssection = HB:Section{
     Name = "Syntax Paid",
     Side = "right"
 }
@@ -252,6 +252,12 @@ Hvsection:Button{
     Name = "Bong",
     Callback  = function()
         setclipboard("-gh 7292595416, 3756389957, 7178028147, 20011897, 6114849049, 6114844034, 5205483683")
+    end
+}
+Hvsection:Button{
+    Name = "Dragon",
+    Callback  = function()
+        setclipboard("-gh 1743941933, 18015906, 4793985219, 62724852, 63690008, 4584788319, 4584787812, 4584787037")
     end
 }
 
@@ -1097,19 +1103,7 @@ LPsection:Button{
     end
 }
 
-local keybindsection = configs:Section{Name = "UI Toggle Keybind", Side = "Left"}
 
-keybindsection:Keybind{
-    Name = "UI Toggle",
-    Flag = "UI Toggle",
-    Default = Enum.KeyCode.RightShift,
-    Blacklist = {Enum.UserInputType.MouseButton1, Enum.UserInputType.MouseButton2, Enum.UserInputType.MouseButton3},
-    Callback = function(_, fromsetting)
-        if not fromsetting then
-            library:Close()
-        end
-    end
-}
 
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/neatdevs/Deems-Stuff/main/Loadstring')))()
