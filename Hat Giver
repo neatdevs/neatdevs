@@ -1,7 +1,7 @@
 if game.PlaceId == 5100950559 then
 	repeat task.wait() until game:IsLoaded()
 
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source")))()
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
     OrionLib:MakeNotification({
         Name = "Updated! 21/08/22",
@@ -36,6 +36,8 @@ local Tri = main:tab("Trigon")
 local Deem = main:tab("Deem")
 
 local HB = main:tab("HomeBrew")
+
+local SYP = main:tab("Syntax")
 
 local Localp = main:tab("Localp")
 
@@ -1098,5 +1100,5 @@ LPsection:Button{
 
 
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/neatdevs/Deems-Stuff/main/Loadstring")))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/neatdevs/Deems-Stuff/main/Loadstring')))()
 end
