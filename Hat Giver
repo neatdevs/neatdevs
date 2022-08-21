@@ -22,7 +22,7 @@ local main = library:Load{
     SizeY = 650,
     Theme = "Midnight",
     Extension = "json", -- config file extension
-    Folder = "vozoid ui or something" -- config folder name
+    Folder = "..." -- config folder name
 }
 
 local HatHub = main:tab("HatHub")
@@ -84,7 +84,7 @@ local HBsection = HB:Section{
     Side = "Left"
 }
 
-local SPsection = HB:Section{
+local SPsection = SYP:Section{
     Name = "Syntax Paid",
     Side = "Left"
 }
