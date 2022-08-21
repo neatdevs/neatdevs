@@ -5,7 +5,7 @@ if game.PlaceId == 5100950559 then
 
     OrionLib:MakeNotification({
         Name = "Updated! 21/08/22",
-        Content = "Added support for Syntax Paid!",
+        Content = "Added support for Syntax Paid and more!",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
@@ -1073,6 +1073,18 @@ Ssection:Button{
     Name = "Big Floppa",
     Callback  = function()
         setclipboard("-gh 6838517854, 63690008, 451220849, 48474294, 62724852, 7495844044, 6995288595")
+    end
+}
+Ssection:Button{
+    Name = "Plane",
+    Callback  = function()
+        setclipboard("-gh 4771592966, 191101707")
+    end
+}
+Ssection:Button{
+    Name = "SCP-049",
+    Callback  = function()
+        setclipboard("-gh 6904899146, 3806345275, 4735642922, 62234425, 48474294, 3850687401, 62724852, 451220849")
     end
 }
 
