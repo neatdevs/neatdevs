@@ -4,8 +4,8 @@ if game.PlaceId == 5100950559 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
     OrionLib:MakeNotification({
-        Name = "Updated! 21/08/22",
-        Content = "Added support for Syntax Paid and more!",
+        Name = "Updated! 26/08/22",
+        Content = "Syntax updated so we did too! New hats: Flamethrower, Battle Axe and Railgun!",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
@@ -1085,6 +1085,22 @@ Ssection:Button{
     Name = "SCP-049",
     Callback  = function()
         setclipboard("-gh 6904899146, 3806345275, 4735642922, 62234425, 48474294, 3850687401, 62724852, 451220849")
+    end
+}
+Ssection:Button{
+    Name = "Flamethrower",
+    Callback  = function()
+        setclipboard("-gh 5064403372, 191101707")
+    end
+}Ssection:Button{
+    Name = "Battle Axe",
+    Callback  = function()
+        setclipboard("-gh 4820198802, ")
+    end
+}Ssection:Button{
+    Name = "Railgun",
+    Callback  = function()
+        setclipboard("-gh 4504231783, 4623059912")
     end
 }
 
