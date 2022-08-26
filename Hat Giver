@@ -41,6 +41,8 @@ local SYP = main:tab("Syntax")
 
 local Localp = main:tab("Localp")
 
+local Set = main:tab("Settings")
+
 local HHsection = HatHub:Section{
     Name = "Hat Hub v3",
     Side = "Left"
@@ -95,6 +97,11 @@ local Ssection = SYP:Section{
 
 local LPsection = Localp:Section{
     Name = "Local Player",
+    Side = "Left"
+}
+
+local SEsection = Set:Section{
+    Name = "Settings",
     Side = "Left"
 }
 
@@ -1132,7 +1139,7 @@ LPsection:Button{
 }
 
 
-local keybindsection = configs:Section{Name = "UI Toggle Keybind", Side = "Left"}
+local keybindsection = Set:Section{Name = "UI Toggle Keybind", Side = "Left"}
 
 keybindsection:Keybind{
     Name = "UI Toggle",
