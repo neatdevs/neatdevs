@@ -4,8 +4,8 @@ if game.PlaceId == 5100950559 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
     OrionLib:MakeNotification({
-        Name = "Updated! 26/08/22",
-        Content = "Syntax updated so we did too! New hats: Flamethrower, Battle Axe and Railgun!",
+        Name = "Updated! 1/09/22",
+        Content = "Fenix added Combat Arms!",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
@@ -412,6 +412,12 @@ FEsection:Button{
     Name = "Handz VR",
     Callback  = function()
         setclipboard("-gh 7669627395, 4793958453, 5674298865, 1744219293, 18015906, 1743941933, 4878136110, 4584788319, 4584787037, 4584787812")
+    end
+}
+FEsection:Button{
+    Name = "Combat Arms",
+    Callback  = function()
+        setclipboard("-gh 7168360269,7168347862,1744235800,1744219293,4602533885,4753437569,62234425,63690008,451220849")
     end
 }
 
