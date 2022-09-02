@@ -1007,19 +1007,19 @@ SPsection:Button{
 SPsection:Button{
     Name = "Divinatori R15",
     Callback  = function()
-        setclipboard("-gh 4773932088, 4820152700")
+        setclipboard("-gh 4773932088, 4820152700, 5973840187")
     end
 }
 SPsection:Button{
     Name = "Disparando R15",
     Callback  = function()
-        setclipboard("-gh 4504231783, 4962510729, 5100070995")
+        setclipboard("-gh 4504231783, 4962510729, 5100070995, 5973840187")
     end
 }
 SPsection:Button{
     Name = "Lanturn R15",
     Callback  = function()
-        setclipboard("-gh 5891622817")
+        setclipboard("-gh 5891622817, 5973840187")
     end
 }
 SPsection:Button{
