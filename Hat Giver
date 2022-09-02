@@ -905,49 +905,49 @@ HBsection:Button{
 SPsection:Button{
     Name = "War Hammer",
     Callback  = function()
-        setclipboard("-gh 4739580137")
+        setclipboard("-gh 4739580137, 63690008")
     end
 }
 SPsection:Button{
     Name = "Giant Pistol",
     Callback  = function()
-        setclipboard("-gh 4878132899, 1744235800, 1743941933, 1744219293, 18015906, 62724852, 451220849, 4504231783")
+        setclipboard("-gh 4878132899, 1744235800, 1743941933, 1744219293, 18015906, 62724852, 451220849, 4504231783, 63690008")
     end
 }
 SPsection:Button{
     Name = "FrostBurn",
     Callback  = function()
-        setclipboard("-gh 6065719924")
+        setclipboard("-gh 6065719924, 63690008")
     end
 }
 SPsection:Button{
     Name = "Gunner",
     Callback  = function()
-        setclipboard("-gh 5410674378, 4504231783")
+        setclipboard("-gh 5410674378, 4504231783, 63690008")
     end
 }
 SPsection:Button{
     Name = "Katana",
     Callback  = function()
-        setclipboard("-gh 8819648065")
+        setclipboard("-gh 8819648065, 63690008")
     end
 }
 SPsection:Button{
     Name = "Elite Combine",
     Callback  = function()
-        setclipboard("-gh 5410674378, 4504231783")
+        setclipboard("-gh 5410674378, 4504231783, 63690008")
     end
 }
 SPsection:Button{
     Name = "Biker Gunner",
     Callback  = function()
-        setclipboard("-gh 5063566353, 6775271817, 4504231783, 191101707")
+        setclipboard("-gh 5063566353, 6775271817, 4504231783, 191101707, 63690008")
     end
 }
 SPsection:Button{
     Name = "JOJO Stand",
     Callback  = function()
-        setclipboard("-gh 6904899146, 48474313, 62234425, 62724852, 451220849, 376527115, 5410674378")
+        setclipboard("-gh 6904899146, 48474313, 62234425, 62724852, 451220849, 376527115, 5410674378, 63690008")
     end
 }
 SPsection:Button{
@@ -977,25 +977,25 @@ SPsection:Button{
 SPsection:Button{
     Name = "DemoKnight",
     Callback  = function()
-        setclipboard("-gh 6441110821, 9488333651")
+        setclipboard("-gh 6441110821, 9488333651, 63690008")
     end
 }
 SPsection:Button{
     Name = "Studio Dummy V3",
     Callback  = function()
-        setclipboard("-gh 5131898377, 4458601937")
+        setclipboard("-gh 5131898377, 4458601937, 63690008")
     end
 }
 SPsection:Button{
     Name = "Studio Dummy V2",
     Callback  = function()
-        setclipboard("-gh 5131898377")
+        setclipboard("-gh 5131898377, 63690008")
     end
 }
 SPsection:Button{
     Name = "Eyo Zen",
     Callback  = function()
-        setclipboard("-gh 6904899146, 4132848799, 5063499736, 4910710390, 4753437569, 7241027024")
+        setclipboard("-gh 6904899146, 4132848799, 5063499736, 4910710390, 4753437569, 7241027024, 63690008")
     end
 }
 SPsection:Button{
@@ -1067,7 +1067,7 @@ Ssection:Button{
 Ssection:Button{
     Name = "StopSign Banisher",
     Callback  = function()
-        setclipboard("-gh 6904899146, 4800095641, 4800100757, 4684378932, 4878132899, 5063499736, 4504231783, 5134896593")
+        setclipboard("-gh 6904899146, 4800095641, 4800100757, 4684378932, 4878132899, 5063499736, 4504231783, 5134896593, 63690008")
     end
 }
 Ssection:Button{
@@ -1097,23 +1097,23 @@ Ssection:Button{
 Ssection:Button{
     Name = "SCP-049",
     Callback  = function()
-        setclipboard("-gh 6904899146, 3806345275, 4735642922, 62234425, 48474294, 3850687401, 62724852, 451220849")
+        setclipboard("-gh 6904899146, 3806345275, 4735642922, 62234425, 48474294, 3850687401, 62724852, 451220849, 63690008")
     end
 }
 Ssection:Button{
     Name = "Flamethrower",
     Callback  = function()
-        setclipboard("-gh 5064403372, 191101707")
+        setclipboard("-gh 5064403372, 191101707, 63690008")
     end
 }Ssection:Button{
     Name = "Battle Axe",
     Callback  = function()
-        setclipboard("-gh 4820198802, ")
+        setclipboard("-gh 4820198802, 63690008")
     end
 }Ssection:Button{
     Name = "Railgun",
     Callback  = function()
-        setclipboard("-gh 4504231783, 4623059912")
+        setclipboard("-gh 4504231783, 4623059912, 63690008")
     end
 }
 
