@@ -1067,7 +1067,7 @@ Ssection:Button{
 Ssection:Button{
     Name = "StopSign Banisher",
     Callback  = function()
-        setclipboard("-gh 6904899146, 4800095641, 4800100757, 4684378932, 4878132899, 5063499736, 4504231783, 5134896593, 63690008")
+        setclipboard("-gh 6904899146, 4800095641, 4800100757, 4684378932, 4878132899, 5063499736, 4504231783, 5134896593")
     end
 }
 Ssection:Button{
