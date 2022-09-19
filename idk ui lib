@@ -1,0 +1,180 @@
+write a roblox ui library script
+
+local library = {}
+
+function library:init()
+	self.ui = {}
+end
+
+function library:createButton(text, x, y, width, height, callback)
+	local button = {}
+	button.text = text
+	button.x = x
+	button.y = y
+	button.width = width
+	button.height = height
+	button.callback = callback
+
+	function button:draw()
+		local oldColor = love.graphics.getColor()
+		local oldFont = love.graphics.getFont()
+
+		love.graphics.setColor(0, 0, 0)
+		love.graphics.rectangle("fill", self.x, self.y, self.width, self.height)
+		love.graphics.setColor(1, 1, 1)
+		love.graphics.setFont(self.font or oldFont)
+		love.graphics.print(self.text, self.x + self.width/2 - self.font:getWidth(self.text)/2, self.y + self.height/2 - self.font:getHeight(self.text)/2)
+
+		love.graphics.setColor(oldColor)
+		love.graphics.setFont(oldFont)
+	end
+
+	function button:update(dt)
+		if not self.hover then
+			if love.mouse.getX() >= self.x and
+				love.mouse.getX() <= self.x + self.width and 
+				love.mouse.getY() >= self.y and 
+				love.mouse.getY() <= self.y + self.height then
+
+				self.hover = true
+			end
+		else
+			if love.mouse.getX() < self.x or
+				love.mouse.getX() > self.x + self.width or 
+				love.mouse.getY() < self.y or 
+				love.mouse.getY() > self.y + self.height then
+
+				self.hover = false
+			end
+		end
+
+		if self.hover and love.mouse.isDown("l") and not self.pressed then
+			if self.callback then
+				self.callback()
+			end
+
+			self.pressed = true
+		elseif not love.mouse.isDown("l") then
+			self.pressed = false
+		end
+	end
+
+	table.insert(self.ui, button)
+	return button
+end
+
+function library:createTextfield(text, x, y, width, height, callback)
+	local textfield = {}
+	textfield.text = text
+	textfield.x = x
+	textfield.y = y
+	textfield.width = width
+	textfield.height = height
+	textfield.callback = callback
+	textfield.cursor = #textfield.text
+	textfield.font = love.graphics.newFont(12)
+	textfield.fontHeight = textfield.font:getHeight("|")
+
+	function textfield:draw()
+		local oldColor = love.graphics.getColor()
+		local oldFont = love.graphics.getFont()
+
+		love.graphics.setColor(0, 0, 0)
+		love.graphics.rectangle("fill", self.x, self.y, self.width, self.height)
+		love.graphics.setColor(1, 1, 1)
+		love.graphics.setFont(self.font)
+		local text = self.text
+		if self.cursor < #text then
+			text = text:sub(1, self.cursor) .. "|" .. text:sub(self.cursor+1)
+		else
+			text = text .. "|"
+		end
+		love.graphics.print(text, self.x + 5, self.y + self.height/2 - self.fontHeight/2)
+
+		love.graphics.setColor(oldColor)
+		love.graphics.setFont(oldFont)
+	end
+
+	function textfield:update(dt)
+		if not self.hover then
+			if love.mouse.getX() >= self.x and
+				love.mouse.getX() <= self.x + self.width and 
+				love.mouse.getY() >= self.y and 
+				love.mouse.getY() <= self.y + self.height then
+
+				self.hover = true
+			end
+		else
+			if love.mouse.getX() < self.x or
+				love.mouse.getX() > self.x + self.width or 
+				love.mouse.getY() < self.y or 
+				love.mouse.getY() > self.y + self.height then
+
+				self.hover = false
+			end
+		end
+
+		if self.hover and love.mouse.isDown("l") and not self.pressed then
+			self.pressed = true
+		elseif not love.mouse.isDown("l") then
+			self.pressed = false
+		end
+
+		if self.pressed then
+			self.cursor = #self.text
+			love.keyboard.setTextInput(true)
+		else
+			love.keyboard.setTextInput(false)
+		end
+	end
+
+	function textfield:keypressed(key)
+		if key == "backspace" then
+			if self.cursor > 0 then
+				self.text = self.text:sub(1, self.cursor-1) .. self.text:sub(self.cursor+1)
+				self.cursor = self.cursor - 1
+			end
+		elseif key == "left" then
+			self.cursor = math.max(0, self.cursor-1)
+		elseif key == "right" then
+			self.cursor = math.min(#self.text, self.cursor+1)
+		elseif key == "home" then
+			self.cursor = 0
+		elseif key == "end" then
+			self.cursor = #self.text
+		elseif key == "return" then
+			if self.callback then
+				self.callback(self.text)
+			end
+		elseif key == "v" and love.keyboard.isDown("lctrl") or love.keyboard.isDown("rctrl") then
+			local text = love.system.getClipboardText()
+			self.text = self.text:sub(1, self.cursor) .. text .. self.text:sub(self.cursor+1)
+			self.cursor = self.cursor + #text
+		end
+	end
+
+	table.insert(self.ui, textfield)
+	return textfield
+end
+
+function library:update(dt)
+	for i, v in ipairs(self.ui) do
+		v:update(dt)
+	end
+end
+
+function library:draw()
+	for i, v in ipairs(self.ui) do
+		v:draw()
+	end
+end
+
+function library:keypressed(key)
+	for i, v in ipairs(self.ui) do
+		if v.keypressed then
+			v:keypressed(key)
+		end
+	end
+end
+
+return library
