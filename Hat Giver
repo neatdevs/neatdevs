@@ -4,8 +4,8 @@ if game.PlaceId == 5100950559 then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
     OrionLib:MakeNotification({
-        Name = "Updated! 1/09/22",
-        Content = "Fenix added Combat Arms!",
+        Name = "Updated! 21/09/22",
+        Content = "Added Nerd and Ravaging Claws to Syntax!",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
