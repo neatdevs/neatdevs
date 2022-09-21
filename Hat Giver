@@ -1116,7 +1116,18 @@ Ssection:Button{
         setclipboard("-gh 4504231783, 4623059912, 63690008")
     end
 }
-
+Ssection:Button{
+    Name = "Nerd",
+    Callback  = function()
+        setclipboard("-gh 9468417713, 5918654338, 9003134104")
+    end
+}
+Ssection:Button{
+    Name = "Ravaging Claws",
+    Callback  = function()
+        setclipboard("-gh 4315489767, 4506945409, 4458601937, 4794315940, 4820152700, 4524991457, 4876469013, 8998968191, 4880921571")
+    end
+}
 
 --LocalPlayer
 LPsection:Button{
