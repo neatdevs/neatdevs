@@ -5,7 +5,7 @@ if game.PlaceId == 5100950559 then
 
     OrionLib:MakeNotification({
         Name = "Updated! 26/09/22",
-        Content = "Added Huge Hammer to Syntax!",
+        Content = "Fixed Deem's loadstirng",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
@@ -1182,5 +1182,5 @@ keybindsection:Keybind{
 
 
 
-loadstring(game:HttpGet(('https://github.com/neatdevs/Deems-Stuff/blob/main/LS%2B')))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/neatdevs/Deems-Stuff/main/LS%2B')))()
 end
