@@ -57,8 +57,8 @@ local FEsection = Fenix:Section{
     Side = "Left"
 }
 local FEEsection = Fenix:Section{
-    Name = "FEnix",
-    Side = "Left"
+    Name = "FEnix.",
+    Side = "right"
 }
 local qEsection = Fenix:Section{
     Name = "FEnix",
