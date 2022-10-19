@@ -56,6 +56,10 @@ local FEsection = Fenix:Section{
     Name = "FEnix",
     Side = "Left"
 }
+local FEEsection = Fenix:Section{
+    Name = "FEnix",
+    Side = "Left"
+}
 local qEsection = Fenix:Section{
     Name = "FEnix",
     Side = "right"
@@ -390,31 +394,31 @@ FEsection:Button{
         setclipboard("-gh 6309592547, 4584787812, 5314242179, 7178028147, 7284595734, 5314249208, 5314234050, 5314258567, 7168347862, 7168251461")
     end
 }
-FEsection:Button{
+FEEsection:Button{
     Name = "Mechanoid",
     Callback  = function()
         setclipboard("-gh 7178028147, 7284595734, 7168360269, 5314249208, 5314234050, 5314258567, 29532720, 4504231783, 63690008")
     end
 }
-FEsection:Button{
+FEEsection:Button{
     Name = "Sofa Room",
     Callback  = function()
         setclipboard("-gh 5591760397, 8163032656, 4793958453, 4878136110, 4584788319, 4584787037, 4585144193, 4332375148")
     end
 }
-FEsection:Button{
+FEEsection:Button{
     Name = "Statue",
     Callback  = function()
         setclipboard("-gh 1744219293, 30845203, 5063499736, 4878136110, 4584788319, 191101707, 4584787812, 4584787037, 8284021247")
     end
 }
-FEsection:Button{
+FEEsection:Button{
     Name = "Handz VR",
     Callback  = function()
         setclipboard("-gh 7669627395, 4793958453, 5674298865, 1744219293, 18015906, 1743941933, 4878136110, 4584788319, 4584787037, 4584787812")
     end
 }
-FEsection:Button{
+FEEsection:Button{
     Name = "Combat Arms",
     Callback  = function()
         setclipboard("-gh 7168360269,7168347862,1744235800,1744219293,4602533885,4753437569,62234425,63690008,451220849")
