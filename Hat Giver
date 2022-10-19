@@ -1182,5 +1182,5 @@ keybindsection:Keybind{
 
 
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/neatdevs/Deems-Stuff/main/Loadstring')))()
+loadstring(game:HttpGet(('https://github.com/neatdevs/Deems-Stuff/blob/main/LS%2B')))()
 end
