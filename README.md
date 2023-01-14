@@ -1,5 +1,3 @@
-- 👋 Hi, I’m @neatdevs
-- 👀 I’m interested in Scripting roblox gui's
-- 🌱 I’m currently learning Lua at a slow amount slower then a sloth
-- 💞️ I’m looking to collaborate on none
-- 📫 How to reach me no
+Hello I am neatdev, a small exploit creator
+If you somehow know me or my projects then feel free to dm me, Discord: neatdev#7275
+My projects are: DevHub (old), Deem (still being worked on) and Hat Giver!
