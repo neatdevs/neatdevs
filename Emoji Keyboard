@@ -1,0 +1,1349 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local EmojiKeyboard = Instance.new("ScreenGui")
+local HolderFrame = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local X = Instance.new("ImageButton")
+local Mini = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local ChatEmoji = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Thumbsup = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Copyrightsymbol = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Clown = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Ok = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Laugingwithtears = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Rollingonthefloorlaughing = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Trademark = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Thumbsdown = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Smilingfacewithhalo = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Smilingfacewithsunglasses = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Nerdyface = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Partyingface = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local zzz = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Anger = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local Starstruck = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local Moneyfacewithmoneytongue = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Hugs = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Eyes = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Shushingface = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local Thinkinface = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local Hourglassstarting = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local Hourglassdone = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Facewithraisedeyebrow = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Expressionlessface = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local Coldface = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Facewithexplodinghead = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local Goldmedal = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local Sadbutrelievedface = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local Fearfulface = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local Steaming = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local Bronzemedal = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local Hundred = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local Silvermedal = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local Skull = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local Bullseye = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local TopBar_2 = Instance.new("Frame")
+local UICorner_38 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local close_2 = Instance.new("ImageButton")
+local remove_2 = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--//Locals\\--
+
+local players = game:GetService("Players")
+local Tween = game:GetService("TweenService")
+local toggle = true
+
+--Properties:
+
+EmojiKeyboard.Name = "Emoji Keyboard"
+EmojiKeyboard.Parent = game.CoreGui
+EmojiKeyboard.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+HolderFrame.Name = "Holder Frame"
+HolderFrame.Parent = EmojiKeyboard
+HolderFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+HolderFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HolderFrame.BackgroundTransparency = 1.000
+HolderFrame.Position = UDim2.new(0.499673396, 0, 0.498344362, 0)
+HolderFrame.Size = UDim2.new(1, 0, 1, 0)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = HolderFrame
+TopBar.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TopBar.Position = UDim2.new(0.388634861, 0, 0.246688738, 0)
+TopBar.Size = UDim2.new(0, 157, 0, 24)
+TopBar.Visible = false
+
+UICorner.Parent = TopBar
+
+Frame.Parent = TopBar
+Frame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.732240021, 0)
+Frame.Size = UDim2.new(0, 157, 0, 6)
+Frame.Visible = false
+Frame.ZIndex = 0
+
+X.Name = "close"
+X.Parent = TopBar
+X.BackgroundTransparency = 1.000
+X.Position = UDim2.new(0.852167308, 0, 0, 0)
+X.Size = UDim2.new(0, 23, 0, 23)
+X.Visible = false
+X.ZIndex = 2
+X.Image = "rbxassetid://3926305904"
+X.ImageRectOffset = Vector2.new(284, 4)
+X.ImageRectSize = Vector2.new(24, 24)
+
+Mini.Name = "remove"
+Mini.Parent = TopBar
+Mini.BackgroundTransparency = 1.000
+Mini.LayoutOrder = 4
+Mini.Position = UDim2.new(0.702423096, 0, 0, 0)
+Mini.Size = UDim2.new(0, 23, 0, 23)
+Mini.Visible = false
+Mini.ZIndex = 3
+Mini.Image = "rbxassetid://3926307971"
+Mini.ImageRectOffset = Vector2.new(884, 284)
+Mini.ImageRectSize = Vector2.new(36, 36)
+
+TextLabel.Parent = TopBar
+TextLabel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -0.0416667461, 0)
+TextLabel.Size = UDim2.new(0, 157, 0, 24)
+TextLabel.Visible = false
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = " Emoji Keyboard"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 15.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+ChatEmoji.Name = "Chat Emoji"
+ChatEmoji.Parent = HolderFrame
+ChatEmoji.AnchorPoint = Vector2.new(0.5, 0.5)
+ChatEmoji.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+ChatEmoji.BackgroundTransparency = 0.300
+ChatEmoji.BorderSizePixel = 0
+ChatEmoji.Position = UDim2.new(0.499265164, 0, 0.499172211, 0)
+ChatEmoji.Size = UDim2.new(0, 269, 0, 305)
+ChatEmoji.Active = true
+ChatEmoji.Draggable = true
+
+UICorner_2.Parent = ChatEmoji
+
+ScrollingFrame.Parent = ChatEmoji
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0817843899, 0, 0.0786885247, 0)
+ScrollingFrame.Size = UDim2.new(0, 246, 0, 281)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1, 0)
+ScrollingFrame.ScrollBarThickness = 4
+
+Thumbsup.Name = "Thumbs up"
+Thumbsup.Parent = ScrollingFrame
+Thumbsup.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Thumbsup.BorderSizePixel = 0
+Thumbsup.Position = UDim2.new(0.0406504273, 0, 0.445409745, 0)
+Thumbsup.Size = UDim2.new(0, 20, 0, 20)
+Thumbsup.Font = Enum.Font.SourceSans
+Thumbsup.Text = "👍"
+Thumbsup.TextColor3 = Color3.fromRGB(255, 255, 255)
+Thumbsup.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = Thumbsup
+
+Copyrightsymbol.Name = "Copyright symbol"
+Copyrightsymbol.Parent = ScrollingFrame
+Copyrightsymbol.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Copyrightsymbol.BorderSizePixel = 0
+Copyrightsymbol.Position = UDim2.new(0.479674816, 0, 0.54737711, 0)
+Copyrightsymbol.Size = UDim2.new(0, 20, 0, 20)
+Copyrightsymbol.Font = Enum.Font.SourceSans
+Copyrightsymbol.Text = "©"
+Copyrightsymbol.TextColor3 = Color3.fromRGB(255, 255, 255)
+Copyrightsymbol.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Copyrightsymbol
+
+Clown.Name = "Clown"
+Clown.Parent = ScrollingFrame
+Clown.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Clown.BorderSizePixel = 0
+Clown.Position = UDim2.new(0.186991841, 0, 0.33540982, 0)
+Clown.Size = UDim2.new(0, 20, 0, 20)
+Clown.Font = Enum.Font.SourceSans
+Clown.Text = "🤡"
+Clown.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clown.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Clown
+
+Ok.Name = "Ok"
+Ok.Parent = ScrollingFrame
+Ok.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Ok.BorderSizePixel = 0
+Ok.Position = UDim2.new(0.788617909, 0, 0.333934367, 0)
+Ok.Size = UDim2.new(0, 20, 0, 20)
+Ok.Font = Enum.Font.SourceSans
+Ok.Text = "👌"
+Ok.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ok.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = Ok
+
+Laugingwithtears.Name = "Lauging with tears"
+Laugingwithtears.Parent = ScrollingFrame
+Laugingwithtears.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Laugingwithtears.BorderSizePixel = 0
+Laugingwithtears.Position = UDim2.new(0.788617909, 0, 0.0396721326, 0)
+Laugingwithtears.Size = UDim2.new(0, 20, 0, 20)
+Laugingwithtears.Font = Enum.Font.SourceSans
+Laugingwithtears.Text = "😂"
+Laugingwithtears.TextColor3 = Color3.fromRGB(255, 255, 255)
+Laugingwithtears.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = Laugingwithtears
+
+Rollingonthefloorlaughing.Name = "Rolling on the floor laughing"
+Rollingonthefloorlaughing.Parent = ScrollingFrame
+Rollingonthefloorlaughing.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Rollingonthefloorlaughing.BorderSizePixel = 0
+Rollingonthefloorlaughing.Position = UDim2.new(0.642276406, 0, 0.0396721326, 0)
+Rollingonthefloorlaughing.Size = UDim2.new(0, 20, 0, 20)
+Rollingonthefloorlaughing.Font = Enum.Font.SourceSans
+Rollingonthefloorlaughing.Text = "🤣"
+Rollingonthefloorlaughing.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rollingonthefloorlaughing.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(0, 5)
+UICorner_8.Parent = Rollingonthefloorlaughing
+
+Trademark.Name = "Trademark"
+Trademark.Parent = ScrollingFrame
+Trademark.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Trademark.BorderSizePixel = 0
+Trademark.Position = UDim2.new(0.642276406, 0, 0.54737711, 0)
+Trademark.Size = UDim2.new(0, 20, 0, 20)
+Trademark.Font = Enum.Font.SourceSans
+Trademark.Text = "™"
+Trademark.TextColor3 = Color3.fromRGB(255, 255, 255)
+Trademark.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(0, 5)
+UICorner_9.Parent = Trademark
+
+Thumbsdown.Name = "Thumbs down"
+Thumbsdown.Parent = ScrollingFrame
+Thumbsdown.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Thumbsdown.BorderSizePixel = 0
+Thumbsdown.Position = UDim2.new(0.18699187, 0, 0.444426209, 0)
+Thumbsdown.Size = UDim2.new(0, 20, 0, 20)
+Thumbsdown.Font = Enum.Font.SourceSans
+Thumbsdown.Text = "👎"
+Thumbsdown.TextColor3 = Color3.fromRGB(255, 255, 255)
+Thumbsdown.TextSize = 14.000
+
+UICorner_10.CornerRadius = UDim.new(0, 5)
+UICorner_10.Parent = Thumbsdown
+
+Smilingfacewithhalo.Name = "Smiling face with halo"
+Smilingfacewithhalo.Parent = ScrollingFrame
+Smilingfacewithhalo.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Smilingfacewithhalo.BorderSizePixel = 0
+Smilingfacewithhalo.Position = UDim2.new(0.186991885, 0, 0.0347540975, 0)
+Smilingfacewithhalo.Size = UDim2.new(0, 20, 0, 20)
+Smilingfacewithhalo.Font = Enum.Font.SourceSans
+Smilingfacewithhalo.Text = "😇"
+Smilingfacewithhalo.TextColor3 = Color3.fromRGB(255, 255, 255)
+Smilingfacewithhalo.TextSize = 14.000
+
+UICorner_11.CornerRadius = UDim.new(0, 5)
+UICorner_11.Parent = Smilingfacewithhalo
+
+Smilingfacewithsunglasses.Name = "Smiling face with sunglasses"
+Smilingfacewithsunglasses.Parent = ScrollingFrame
+Smilingfacewithsunglasses.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Smilingfacewithsunglasses.BorderSizePixel = 0
+Smilingfacewithsunglasses.Position = UDim2.new(0.333333373, 0, 0.0380327925, 0)
+Smilingfacewithsunglasses.Size = UDim2.new(0, 20, 0, 20)
+Smilingfacewithsunglasses.Font = Enum.Font.SourceSans
+Smilingfacewithsunglasses.Text = "😎"
+Smilingfacewithsunglasses.TextColor3 = Color3.fromRGB(255, 255, 255)
+Smilingfacewithsunglasses.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(0, 5)
+UICorner_12.Parent = Smilingfacewithsunglasses
+
+Nerdyface.Name = "Nerdy face"
+Nerdyface.Parent = ScrollingFrame
+Nerdyface.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Nerdyface.BorderSizePixel = 0
+Nerdyface.Position = UDim2.new(0.479674786, 0, 0.0380327925, 0)
+Nerdyface.Size = UDim2.new(0, 20, 0, 20)
+Nerdyface.Font = Enum.Font.SourceSans
+Nerdyface.Text = "🤓"
+Nerdyface.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nerdyface.TextSize = 14.000
+
+UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = Nerdyface
+
+Partyingface.Name = "Partying face"
+Partyingface.Parent = ScrollingFrame
+Partyingface.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Partyingface.BorderSizePixel = 0
+Partyingface.Position = UDim2.new(0.0406504273, 0, 0.136393443, 0)
+Partyingface.Size = UDim2.new(0, 20, 0, 20)
+Partyingface.Font = Enum.Font.SourceSans
+Partyingface.Text = "🥳"
+Partyingface.TextColor3 = Color3.fromRGB(255, 255, 255)
+Partyingface.TextSize = 14.000
+
+UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_14.Parent = Partyingface
+
+zzz.Name = "zzz"
+zzz.Parent = ScrollingFrame
+zzz.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+zzz.BorderSizePixel = 0
+zzz.Position = UDim2.new(0.642276406, 0, 0.333934367, 0)
+zzz.Size = UDim2.new(0, 20, 0, 20)
+zzz.Font = Enum.Font.SourceSans
+zzz.Text = "💤"
+zzz.TextColor3 = Color3.fromRGB(255, 255, 255)
+zzz.TextSize = 14.000
+
+UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = zzz
+
+Anger.Name = "Anger"
+Anger.Parent = ScrollingFrame
+Anger.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Anger.BorderSizePixel = 0
+Anger.Position = UDim2.new(0.479674786, 0, 0.333934367, 0)
+Anger.Size = UDim2.new(0, 20, 0, 20)
+Anger.Font = Enum.Font.SourceSans
+Anger.Text = "💢"
+Anger.TextColor3 = Color3.fromRGB(255, 255, 255)
+Anger.TextSize = 14.000
+
+UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = Anger
+
+Starstruck.Name = "Star-struck"
+Starstruck.Parent = ScrollingFrame
+Starstruck.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Starstruck.BorderSizePixel = 0
+Starstruck.Position = UDim2.new(0.333333343, 0, 0.134426206, 0)
+Starstruck.Size = UDim2.new(0, 20, 0, 20)
+Starstruck.Font = Enum.Font.SourceSans
+Starstruck.Text = "🤩"
+Starstruck.TextColor3 = Color3.fromRGB(255, 255, 255)
+Starstruck.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(0, 5)
+UICorner_17.Parent = Starstruck
+
+Moneyfacewithmoneytongue.Name = "Money face with money tongue"
+Moneyfacewithmoneytongue.Parent = ScrollingFrame
+Moneyfacewithmoneytongue.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Moneyfacewithmoneytongue.BorderSizePixel = 0
+Moneyfacewithmoneytongue.Position = UDim2.new(0.479674816, 0, 0.134426206, 0)
+Moneyfacewithmoneytongue.Size = UDim2.new(0, 20, 0, 20)
+Moneyfacewithmoneytongue.Font = Enum.Font.SourceSans
+Moneyfacewithmoneytongue.Text = "🤑"
+Moneyfacewithmoneytongue.TextColor3 = Color3.fromRGB(255, 255, 255)
+Moneyfacewithmoneytongue.TextSize = 14.000
+
+UICorner_18.CornerRadius = UDim.new(0, 5)
+UICorner_18.Parent = Moneyfacewithmoneytongue
+
+Hugs.Name = "Hugs"
+Hugs.Parent = ScrollingFrame
+Hugs.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Hugs.BorderSizePixel = 0
+Hugs.Position = UDim2.new(0.642276406, 0, 0.134426206, 0)
+Hugs.Size = UDim2.new(0, 20, 0, 20)
+Hugs.Font = Enum.Font.SourceSans
+Hugs.Text = "🤗"
+Hugs.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hugs.TextSize = 14.000
+
+UICorner_19.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = Hugs
+
+Eyes.Name = "Eyes"
+Eyes.Parent = ScrollingFrame
+Eyes.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Eyes.BorderSizePixel = 0
+Eyes.Position = UDim2.new(0.333333343, 0, 0.444426239, 0)
+Eyes.Size = UDim2.new(0, 20, 0, 20)
+Eyes.Font = Enum.Font.SourceSans
+Eyes.Text = "👀"
+Eyes.TextColor3 = Color3.fromRGB(255, 255, 255)
+Eyes.TextSize = 14.000
+
+UICorner_20.CornerRadius = UDim.new(0, 5)
+UICorner_20.Parent = Eyes
+
+Shushingface.Name = "Shushing face"
+Shushingface.Parent = ScrollingFrame
+Shushingface.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Shushingface.BorderSizePixel = 0
+Shushingface.Position = UDim2.new(0.040650405, 0, 0.0373770595, 0)
+Shushingface.Size = UDim2.new(0, 20, 0, 20)
+Shushingface.Font = Enum.Font.SourceSans
+Shushingface.Text = "🤫"
+Shushingface.TextColor3 = Color3.fromRGB(255, 255, 255)
+Shushingface.TextSize = 14.000
+
+UICorner_21.CornerRadius = UDim.new(0, 5)
+UICorner_21.Parent = Shushingface
+
+Thinkinface.Name = "Thinkin face"
+Thinkinface.Parent = ScrollingFrame
+Thinkinface.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Thinkinface.BorderSizePixel = 0
+Thinkinface.Position = UDim2.new(0.18699187, 0, 0.135737702, 0)
+Thinkinface.Size = UDim2.new(0, 20, 0, 20)
+Thinkinface.Font = Enum.Font.SourceSans
+Thinkinface.Text = "🤔"
+Thinkinface.TextColor3 = Color3.fromRGB(255, 255, 255)
+Thinkinface.TextSize = 14.000
+
+UICorner_22.CornerRadius = UDim.new(0, 5)
+UICorner_22.Parent = Thinkinface
+
+Hourglassstarting.Name = "Hourglass starting"
+Hourglassstarting.Parent = ScrollingFrame
+Hourglassstarting.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Hourglassstarting.BorderSizePixel = 0
+Hourglassstarting.Position = UDim2.new(0.642276406, 0, 0.444426239, 0)
+Hourglassstarting.Size = UDim2.new(0, 20, 0, 20)
+Hourglassstarting.Font = Enum.Font.SourceSans
+Hourglassstarting.Text = "⏳"
+Hourglassstarting.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hourglassstarting.TextSize = 14.000
+
+UICorner_23.CornerRadius = UDim.new(0, 5)
+UICorner_23.Parent = Hourglassstarting
+
+Hourglassdone.Name = "Hourglass done"
+Hourglassdone.Parent = ScrollingFrame
+Hourglassdone.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Hourglassdone.BorderSizePixel = 0
+Hourglassdone.Position = UDim2.new(0.479674816, 0, 0.444426239, 0)
+Hourglassdone.Size = UDim2.new(0, 20, 0, 20)
+Hourglassdone.Font = Enum.Font.SourceSans
+Hourglassdone.Text = "⌛"
+Hourglassdone.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hourglassdone.TextSize = 14.000
+
+UICorner_24.CornerRadius = UDim.new(0, 5)
+UICorner_24.Parent = Hourglassdone
+
+Facewithraisedeyebrow.Name = "Face with raised eyebrow"
+Facewithraisedeyebrow.Parent = ScrollingFrame
+Facewithraisedeyebrow.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Facewithraisedeyebrow.BorderSizePixel = 0
+Facewithraisedeyebrow.Position = UDim2.new(0.788617849, 0, 0.135737702, 0)
+Facewithraisedeyebrow.Size = UDim2.new(0, 20, 0, 20)
+Facewithraisedeyebrow.Font = Enum.Font.SourceSans
+Facewithraisedeyebrow.Text = "🤨"
+Facewithraisedeyebrow.TextColor3 = Color3.fromRGB(255, 255, 255)
+Facewithraisedeyebrow.TextSize = 14.000
+
+UICorner_25.CornerRadius = UDim.new(0, 5)
+UICorner_25.Parent = Facewithraisedeyebrow
+
+Expressionlessface.Name = "Expressionless face"
+Expressionlessface.Parent = ScrollingFrame
+Expressionlessface.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Expressionlessface.BorderSizePixel = 0
+Expressionlessface.Position = UDim2.new(0.333333343, 0, 0.237377048, 0)
+Expressionlessface.Size = UDim2.new(0, 20, 0, 20)
+Expressionlessface.Font = Enum.Font.SourceSans
+Expressionlessface.Text = "😑"
+Expressionlessface.TextColor3 = Color3.fromRGB(255, 255, 255)
+Expressionlessface.TextSize = 14.000
+
+UICorner_26.CornerRadius = UDim.new(0, 5)
+UICorner_26.Parent = Expressionlessface
+
+Coldface.Name = "Cold face"
+Coldface.Parent = ScrollingFrame
+Coldface.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Coldface.BorderSizePixel = 0
+Coldface.Position = UDim2.new(0.040650405, 0, 0.239016369, 0)
+Coldface.Size = UDim2.new(0, 20, 0, 20)
+Coldface.Font = Enum.Font.SourceSans
+Coldface.Text = "🥶"
+Coldface.TextColor3 = Color3.fromRGB(255, 255, 255)
+Coldface.TextSize = 14.000
+
+UICorner_27.CornerRadius = UDim.new(0, 5)
+UICorner_27.Parent = Coldface
+
+Facewithexplodinghead.Name = "Face with exploding head"
+Facewithexplodinghead.Parent = ScrollingFrame
+Facewithexplodinghead.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Facewithexplodinghead.BorderSizePixel = 0
+Facewithexplodinghead.Position = UDim2.new(0.18699187, 0, 0.239016369, 0)
+Facewithexplodinghead.Size = UDim2.new(0, 20, 0, 20)
+Facewithexplodinghead.Font = Enum.Font.SourceSans
+Facewithexplodinghead.Text = "🤯"
+Facewithexplodinghead.TextColor3 = Color3.fromRGB(255, 255, 255)
+Facewithexplodinghead.TextSize = 14.000
+
+UICorner_28.CornerRadius = UDim.new(0, 5)
+UICorner_28.Parent = Facewithexplodinghead
+
+Goldmedal.Name = "Gold medal"
+Goldmedal.Parent = ScrollingFrame
+Goldmedal.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Goldmedal.BorderSizePixel = 0
+Goldmedal.Position = UDim2.new(0.788617909, 0, 0.444426239, 0)
+Goldmedal.Size = UDim2.new(0, 20, 0, 20)
+Goldmedal.Font = Enum.Font.SourceSans
+Goldmedal.Text = "🥇"
+Goldmedal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Goldmedal.TextSize = 14.000
+
+UICorner_29.CornerRadius = UDim.new(0, 5)
+UICorner_29.Parent = Goldmedal
+
+Sadbutrelievedface.Name = "Sad but relieved face"
+Sadbutrelievedface.Parent = ScrollingFrame
+Sadbutrelievedface.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Sadbutrelievedface.BorderSizePixel = 0
+Sadbutrelievedface.Position = UDim2.new(0.479674816, 0, 0.239016369, 0)
+Sadbutrelievedface.Size = UDim2.new(0, 20, 0, 20)
+Sadbutrelievedface.Font = Enum.Font.SourceSans
+Sadbutrelievedface.Text = "😥"
+Sadbutrelievedface.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sadbutrelievedface.TextSize = 14.000
+
+UICorner_30.CornerRadius = UDim.new(0, 5)
+UICorner_30.Parent = Sadbutrelievedface
+
+Fearfulface.Name = "Fearful face"
+Fearfulface.Parent = ScrollingFrame
+Fearfulface.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Fearfulface.BorderSizePixel = 0
+Fearfulface.Position = UDim2.new(0.642276406, 0, 0.235737681, 0)
+Fearfulface.Size = UDim2.new(0, 20, 0, 20)
+Fearfulface.Font = Enum.Font.SourceSans
+Fearfulface.Text = "😨"
+Fearfulface.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fearfulface.TextSize = 14.000
+
+UICorner_31.CornerRadius = UDim.new(0, 5)
+UICorner_31.Parent = Fearfulface
+
+Steaming.Name = "Steaming"
+Steaming.Parent = ScrollingFrame
+Steaming.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Steaming.BorderSizePixel = 0
+Steaming.Position = UDim2.new(0.788617909, 0, 0.239016369, 0)
+Steaming.Size = UDim2.new(0, 20, 0, 20)
+Steaming.Font = Enum.Font.SourceSans
+Steaming.Text = "😤"
+Steaming.TextColor3 = Color3.fromRGB(255, 255, 255)
+Steaming.TextSize = 14.000
+
+UICorner_32.CornerRadius = UDim.new(0, 5)
+UICorner_32.Parent = Steaming
+
+Bronzemedal.Name = "Bronze medal"
+Bronzemedal.Parent = ScrollingFrame
+Bronzemedal.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Bronzemedal.BorderSizePixel = 0
+Bronzemedal.Position = UDim2.new(0.18699187, 0, 0.54737711, 0)
+Bronzemedal.Size = UDim2.new(0, 20, 0, 20)
+Bronzemedal.Font = Enum.Font.SourceSans
+Bronzemedal.Text = "🥉"
+Bronzemedal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bronzemedal.TextSize = 14.000
+
+UICorner_33.CornerRadius = UDim.new(0, 5)
+UICorner_33.Parent = Bronzemedal
+
+Hundred.Name = "Hundred"
+Hundred.Parent = ScrollingFrame
+Hundred.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Hundred.BorderSizePixel = 0
+Hundred.Position = UDim2.new(0.333333343, 0, 0.33540982, 0)
+Hundred.Size = UDim2.new(0, 20, 0, 20)
+Hundred.Font = Enum.Font.SourceSans
+Hundred.Text = "💯"
+Hundred.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hundred.TextSize = 14.000
+
+UICorner_34.CornerRadius = UDim.new(0, 5)
+UICorner_34.Parent = Hundred
+
+Silvermedal.Name = "Silver medal"
+Silvermedal.Parent = ScrollingFrame
+Silvermedal.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Silvermedal.BorderSizePixel = 0
+Silvermedal.Position = UDim2.new(0.040650405, 0, 0.54737711, 0)
+Silvermedal.Size = UDim2.new(0, 20, 0, 20)
+Silvermedal.Font = Enum.Font.SourceSans
+Silvermedal.Text = "🥈"
+Silvermedal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Silvermedal.TextSize = 14.000
+
+UICorner_35.CornerRadius = UDim.new(0, 5)
+UICorner_35.Parent = Silvermedal
+
+Skull.Name = "Skull"
+Skull.Parent = ScrollingFrame
+Skull.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Skull.BorderSizePixel = 0
+Skull.Position = UDim2.new(0.0406504273, 0, 0.33540982, 0)
+Skull.Size = UDim2.new(0, 20, 0, 20)
+Skull.Font = Enum.Font.SourceSans
+Skull.Text = "💀"
+Skull.TextColor3 = Color3.fromRGB(255, 255, 255)
+Skull.TextSize = 14.000
+
+UICorner_36.CornerRadius = UDim.new(0, 5)
+UICorner_36.Parent = Skull
+
+Bullseye.Name = "Bullseye"
+Bullseye.Parent = ScrollingFrame
+Bullseye.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Bullseye.BorderSizePixel = 0
+Bullseye.Position = UDim2.new(0.333333343, 0, 0.54737711, 0)
+Bullseye.Size = UDim2.new(0, 20, 0, 20)
+Bullseye.Font = Enum.Font.SourceSans
+Bullseye.Text = "🎯"
+Bullseye.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bullseye.TextSize = 14.000
+
+UICorner_37.CornerRadius = UDim.new(0, 5)
+UICorner_37.Parent = Bullseye
+
+TopBar_2.Name = "TopBar"
+TopBar_2.Parent = ChatEmoji
+TopBar_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TopBar_2.Size = UDim2.new(0, 269, 0, 24)
+
+UICorner_38.Parent = TopBar_2
+
+Frame_2.Parent = TopBar_2
+Frame_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.732240379, 0)
+Frame_2.Size = UDim2.new(0, 269, 0, 6)
+Frame_2.ZIndex = 0
+
+close_2.Name = "close"
+close_2.Parent = TopBar_2
+close_2.BackgroundTransparency = 1.000
+close_2.Position = UDim2.new(0.916356862, 0, 0, 0)
+close_2.Size = UDim2.new(0, 22, 0, 23)
+close_2.ZIndex = 2
+close_2.Image = "rbxassetid://3926305904"
+close_2.ImageRectOffset = Vector2.new(284, 4)
+close_2.ImageRectSize = Vector2.new(24, 24)
+close_2.MouseButton1Click:Connect(function()
+	if toggle == true then
+		ScrollingFrame:TweenSize(UDim2.new(0, 246,0, 0))
+		ChatEmoji:TweenSize(UDim2.new(0, 269,0, 24))
+		EmojiKeyboard:Destroy()
+		toggle = false
+	end
+end)
+
+remove_2.Name = "remove"
+remove_2.Parent = TopBar_2
+remove_2.BackgroundTransparency = 1.000
+remove_2.LayoutOrder = 4
+remove_2.Position = UDim2.new(0.830855012, 0, 2.23517418e-08, 0)
+remove_2.Size = UDim2.new(0, 23, 0, 23)
+remove_2.ZIndex = 2
+remove_2.Image = "rbxassetid://3926307971"
+remove_2.ImageRectOffset = Vector2.new(884, 284)
+remove_2.ImageRectSize = Vector2.new(36, 36)
+remove_2.MouseButton1Click:Connect(function()
+	if toggle == true then
+		ScrollingFrame:TweenSize(UDim2.new(0, 246,0, 0))
+		ChatEmoji:TweenSize(UDim2.new(0, 269,0, 24))
+		toggle = false
+	elseif toggle == false then
+		ScrollingFrame:TweenSize(UDim2.new(0, 246,0, 281))
+		ChatEmoji:TweenSize(UDim2.new(0, 269,0, 305))
+		toggle = true
+	end
+end)
+
+TextLabel_2.Parent = TopBar_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 269, 0, 24)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.GothamBlack
+TextLabel_2.Text = " Emoji Keyboard"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 15.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Scripts:
+
+local function DPBFUT_fake_script() -- Thumbsup.LocalScript 
+	local script = Instance.new('LocalScript', Thumbsup)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+
+
+end
+coroutine.wrap(DPBFUT_fake_script)()
+local function IVBVC_fake_script() -- Copyrightsymbol.LocalScript 
+	local script = Instance.new('LocalScript', Copyrightsymbol)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+
+	
+
+end
+coroutine.wrap(IVBVC_fake_script)()
+local function HLALOD_fake_script() -- Clown.LocalScript 
+	local script = Instance.new('LocalScript', Clown)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(HLALOD_fake_script)()
+local function UDTMIK_fake_script() -- Ok.LocalScript 
+	local script = Instance.new('LocalScript', Ok)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(UDTMIK_fake_script)()
+local function YTLSXXG_fake_script() -- Laugingwithtears.LocalScript 
+	local script = Instance.new('LocalScript', Laugingwithtears)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+
+end
+coroutine.wrap(YTLSXXG_fake_script)()
+local function CKTS_fake_script() -- Rollingonthefloorlaughing.LocalScript 
+	local script = Instance.new('LocalScript', Rollingonthefloorlaughing)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(CKTS_fake_script)()
+local function MPIG_fake_script() -- Trademark.LocalScript 
+	local script = Instance.new('LocalScript', Trademark)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(MPIG_fake_script)()
+local function KRNY_fake_script() -- Thumbsdown.LocalScript 
+	local script = Instance.new('LocalScript', Thumbsdown)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(KRNY_fake_script)()
+local function FPWMKL_fake_script() -- Smilingfacewithhalo.LocalScript 
+	local script = Instance.new('LocalScript', Smilingfacewithhalo)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(FPWMKL_fake_script)()
+local function DYXXMCM_fake_script() -- Smilingfacewithsunglasses.LocalScript 
+	local script = Instance.new('LocalScript', Smilingfacewithsunglasses)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(DYXXMCM_fake_script)()
+local function DLYBMV_fake_script() -- Nerdyface.LocalScript 
+	local script = Instance.new('LocalScript', Nerdyface)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(DLYBMV_fake_script)()
+local function JMABZU_fake_script() -- Partyingface.LocalScript 
+	local script = Instance.new('LocalScript', Partyingface)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(JMABZU_fake_script)()
+local function ZSIWSCG_fake_script() -- zzz.LocalScript 
+	local script = Instance.new('LocalScript', zzz)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(ZSIWSCG_fake_script)()
+local function VSUNUF_fake_script() -- Anger.LocalScript 
+	local script = Instance.new('LocalScript', Anger)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(VSUNUF_fake_script)()
+local function POXE_fake_script() -- Starstruck.LocalScript 
+	local script = Instance.new('LocalScript', Starstruck)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(POXE_fake_script)()
+local function CPGO_fake_script() -- Moneyfacewithmoneytongue.LocalScript 
+	local script = Instance.new('LocalScript', Moneyfacewithmoneytongue)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(CPGO_fake_script)()
+local function PQDYR_fake_script() -- Hugs.LocalScript 
+	local script = Instance.new('LocalScript', Hugs)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(PQDYR_fake_script)()
+local function HHHYQTB_fake_script() -- Eyes.LocalScript 
+	local script = Instance.new('LocalScript', Eyes)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(HHHYQTB_fake_script)()
+local function TVAKB_fake_script() -- Shushingface.LocalScript 
+	local script = Instance.new('LocalScript', Shushingface)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(TVAKB_fake_script)()
+local function HHFQEE_fake_script() -- Thinkinface.LocalScript 
+	local script = Instance.new('LocalScript', Thinkinface)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(HHFQEE_fake_script)()
+local function AXHI_fake_script() -- Hourglassstarting.LocalScript 
+	local script = Instance.new('LocalScript', Hourglassstarting)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(AXHI_fake_script)()
+local function JGXSE_fake_script() -- Hourglassdone.LocalScript 
+	local script = Instance.new('LocalScript', Hourglassdone)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(JGXSE_fake_script)()
+local function RXOLQO_fake_script() -- Facewithraisedeyebrow.LocalScript 
+	local script = Instance.new('LocalScript', Facewithraisedeyebrow)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(RXOLQO_fake_script)()
+local function CSERZZ_fake_script() -- Expressionlessface.LocalScript 
+	local script = Instance.new('LocalScript', Expressionlessface)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(CSERZZ_fake_script)()
+local function NRHDPHZ_fake_script() -- Coldface.LocalScript 
+	local script = Instance.new('LocalScript', Coldface)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(NRHDPHZ_fake_script)()
+local function FNORXQ_fake_script() -- Facewithexplodinghead.LocalScript 
+	local script = Instance.new('LocalScript', Facewithexplodinghead)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(FNORXQ_fake_script)()
+local function CKMLPGX_fake_script() -- Goldmedal.LocalScript 
+	local script = Instance.new('LocalScript', Goldmedal)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(CKMLPGX_fake_script)()
+local function GNFYKBD_fake_script() -- Sadbutrelievedface.LocalScript 
+	local script = Instance.new('LocalScript', Sadbutrelievedface)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(GNFYKBD_fake_script)()
+local function IGFIWEB_fake_script() -- Fearfulface.LocalScript 
+	local script = Instance.new('LocalScript', Fearfulface)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(IGFIWEB_fake_script)()
+local function PUZUCN_fake_script() -- Steaming.LocalScript 
+	local script = Instance.new('LocalScript', Steaming)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(PUZUCN_fake_script)()
+local function XZOFI_fake_script() -- Bronzemedal.LocalScript 
+	local script = Instance.new('LocalScript', Bronzemedal)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(XZOFI_fake_script)()
+local function VPBUASH_fake_script() -- Hundred.LocalScript 
+	local script = Instance.new('LocalScript', Hundred)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(VPBUASH_fake_script)()
+local function VSPMUU_fake_script() -- Silvermedal.LocalScript 
+	local script = Instance.new('LocalScript', Silvermedal)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(VSPMUU_fake_script)()
+local function QWVA_fake_script() -- Skull.LocalScript 
+	local script = Instance.new('LocalScript', Skull)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(QWVA_fake_script)()
+local function OVVNLFO_fake_script() -- Bullseye.LocalScript 
+	local script = Instance.new('LocalScript', Bullseye)
+
+	local emoji = script.Parent.Text
+
+	local button = script.Parent
+
+	button.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = emoji,
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(OVVNLFO_fake_script)()
