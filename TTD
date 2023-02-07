@@ -1,0 +1,1158 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TeleportGUI = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local remove = Instance.new("ImageButton")
+local MinimiseButton = Instance.new("TextButton")
+local close = Instance.new("ImageButton")
+local CloseButton = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local Frame_5 = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+local Warper = Instance.new("Frame")
+local Animated = Instance.new("ImageLabel")
+local PL = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local TextButton_2 = Instance.new("TextButton")
+local Frame_6 = Instance.new("Frame")
+local close_2 = Instance.new("ImageButton")
+local CloseButton_2 = Instance.new("TextButton")
+local remove_2 = Instance.new("ImageButton")
+local MinimiseButton_2 = Instance.new("TextButton")
+local Frame_7 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Frame_8 = Instance.new("Frame")
+local Frame_9 = Instance.new("Frame")
+local Frame_10 = Instance.new("Frame")
+local ImageButton_2 = Instance.new("ImageButton")
+local UICorner_6 = Instance.new("UICorner")
+local Amory = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local UIGradient_2 = Instance.new("UIGradient")
+local Backofnexus = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local Breakinthemap = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local Backrooms = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local Breakroom = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+local Bottomtower = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local UIGradient_7 = Instance.new("UIGradient")
+local Cafe = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
+local Copcarspawners = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIGradient_9 = Instance.new("UIGradient")
+local Crimpads = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UIGradient_10 = Instance.new("UIGradient")
+local Crimwarehouse = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local UIGradient_11 = Instance.new("UIGradient")
+local Crouchglitcharea = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local UIGradient_12 = Instance.new("UIGradient")
+local Floatingisland = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local UIGradient_13 = Instance.new("UIGradient")
+local Frontdesk = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local UIGradient_14 = Instance.new("UIGradient")
+local Kitchen = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local UIGradient_15 = Instance.new("UIGradient")
+local Neutralspawn = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local UIGradient_16 = Instance.new("UIGradient")
+local Nexus = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local UIGradient_17 = Instance.new("UIGradient")
+local Roofofprison = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local UIGradient_18 = Instance.new("UIGradient")
+local Surveillanceroom = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local UIGradient_19 = Instance.new("UIGradient")
+local Thesexdungeon = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local UIGradient_20 = Instance.new("UIGradient")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local UIGradient_21 = Instance.new("UIGradient")
+local Topoftower = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local UIGradient_22 = Instance.new("UIGradient")
+local Underthemapgrassarea = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local UIGradient_23 = Instance.new("UIGradient")
+local Underthemaproad = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local UIGradient_24 = Instance.new("UIGradient")
+local Unusedroom = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local UIGradient_25 = Instance.new("UIGradient")
+local Unusedroom_2 = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local UIGradient_26 = Instance.new("UIGradient")
+local Frontwall = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local UIGradient_27 = Instance.new("UIGradient")
+local Gate = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local UIGradient_28 = Instance.new("UIGradient")
+local Skywallbreak = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local UIGradient_29 = Instance.new("UIGradient")
+local Yard = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local UIGradient_30 = Instance.new("UIGradient")
+local Yardbutweird = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local UIGradient_31 = Instance.new("UIGradient")
+
+--Properties:
+
+TeleportGUI.Name = "Teleport GUI"
+TeleportGUI.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = TeleportGUI
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.Position = UDim2.new(0.263716489, 0, 0.223509938, 0)
+Main.Size = UDim2.new(0, 579, 0, 333)
+Main.Visible = true
+Main.Active = true
+Main.Draggable = true
+
+UICorner.Parent = Main
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Size = UDim2.new(0, 579, 0, 28)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+UICorner_2.Parent = TextLabel
+
+ImageLabel.Parent = TextLabel
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0430000015, 0, 0.25, 0)
+ImageLabel.Size = UDim2.new(0, 263, 0, 38)
+ImageLabel.ZIndex = 2
+ImageLabel.Image = "rbxassetid://12399222467"
+ImageLabel.ScaleType = Enum.ScaleType.Crop
+
+ImageLabel_2.Parent = TextLabel
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(-0.0207253881, 0, -0.178571433, 0)
+ImageLabel_2.Size = UDim2.new(0, 62, 0, 37)
+ImageLabel_2.ZIndex = 2
+ImageLabel_2.Image = "rbxassetid://12398663215"
+ImageLabel_2.ScaleType = Enum.ScaleType.Fit
+
+TextButton.Parent = ImageLabel_2
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Size = UDim2.new(0, 62, 0, 37)
+TextButton.ZIndex = 3
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+Frame.Parent = TextLabel
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.535714269, 0)
+Frame.Size = UDim2.new(0, 579, 0, 13)
+
+remove.Name = "remove"
+remove.Parent = TextLabel
+remove.BackgroundTransparency = 1.000
+remove.LayoutOrder = 4
+remove.Position = UDim2.new(0.912780643, 0, 0.0357142985, 0)
+remove.Size = UDim2.new(0, 25, 0, 25)
+remove.ZIndex = 2
+remove.Image = "rbxassetid://3926307971"
+remove.ImageRectOffset = Vector2.new(884, 284)
+remove.ImageRectSize = Vector2.new(36, 36)
+
+_G.toggle = true
+
+MinimiseButton.Name = "Minimise Button"
+MinimiseButton.Parent = remove
+MinimiseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MinimiseButton.BackgroundTransparency = 1.000
+MinimiseButton.Size = UDim2.new(0, 25, 0, 25)
+MinimiseButton.ZIndex = 3
+MinimiseButton.Font = Enum.Font.SourceSans
+MinimiseButton.Text = ""
+MinimiseButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MinimiseButton.TextSize = 14.000
+MinimiseButton.MouseButton1Click:Connect(function()
+    if _G.toggle then
+	Frame_2.Visible = false
+	Warper.Visible = false
+	Main.Size = UDim2.new(0, 579 , 0, 28)
+	_G.toggle = false
+    elseif not _G.toggle then
+    Frame_2.Visible = true
+    Warper.Visible = true
+    Main.Size = UDim2.new(0, 579, 0, 333)
+    _G.toggle = true
+    end
+end)
+
+close.Name = "close"
+close.Parent = TextLabel
+close.BackgroundTransparency = 1.000
+close.Position = UDim2.new(0.955958545, 0, 0.0357142985, 0)
+close.Size = UDim2.new(0, 25, 0, 25)
+close.ZIndex = 2
+close.Image = "rbxassetid://3926305904"
+close.ImageRectOffset = Vector2.new(284, 4)
+close.ImageRectSize = Vector2.new(24, 24)
+
+CloseButton.Name = "Close Button"
+CloseButton.Parent = close
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.Size = UDim2.new(0, 25, 0, 25)
+CloseButton.ZIndex = 3
+CloseButton.Font = Enum.Font.SourceSans
+CloseButton.Text = ""
+CloseButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.TextSize = 14.000
+CloseButton.MouseButton1Click:Connect(function()
+	TeleportGUI:Destroy()
+end)
+
+Frame_2.Parent = Main
+Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.0840840861, 0)
+Frame_2.Size = UDim2.new(0, 50, 0, 305)
+
+UICorner_3.Parent = Frame_2
+
+Frame_3.Parent = Frame_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0, 0, -0.00116186927, 0)
+Frame_3.Size = UDim2.new(0, 49, 0, 12)
+
+Frame_4.Parent = Frame_2
+Frame_4.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Frame_4.BorderSizePixel = 0
+Frame_4.Size = UDim2.new(0, 579, 0, 1)
+Frame_4.ZIndex = 3
+
+Frame_5.Parent = Frame_2
+Frame_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0.875993133, 0, -0.00116181374, 0)
+Frame_5.Size = UDim2.new(0, 6, 0, 305)
+
+ImageButton.Parent = Frame_2
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Position = UDim2.new(0.180000007, 0, 0.0359999985, 0)
+ImageButton.Size = UDim2.new(0, 30, 0, 30)
+ImageButton.Image = "rbxassetid://12398991609"
+ImageButton.MouseButton1Click:Connect(function()
+    PL.Visible = true
+    Main.Visible = false
+end)
+
+Warper.Name = "Warper"
+Warper.Parent = Main
+Warper.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warper.BackgroundTransparency = 1.000
+Warper.BorderSizePixel = 0
+Warper.ClipsDescendants = true
+Warper.Position = UDim2.new(0.086355783, 0, 0.0840840861, 0)
+Warper.Size = UDim2.new(0, 529, 0, 305)
+Warper.SizeConstraint = Enum.SizeConstraint.RelativeYY
+Warper.ZIndex = 3
+
+Animated.Name = "Animated"
+Animated.Parent = Warper
+Animated.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Animated.BackgroundTransparency = 1.000
+Animated.BorderSizePixel = 0
+Animated.Size = UDim2.new(0, 529, 0, 304)
+Animated.Image = "rbxassetid://12398940737"
+
+PL.Name = "PL"
+PL.Parent = TeleportGUI
+PL.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
+PL.Position = UDim2.new(0.263999999, 0, 0.224000007, 0)
+PL.Size = UDim2.new(0, 579, 0, 333)
+PL.Visible = false
+PL.Active = true
+PL.Draggable = true
+
+TextLabel_2.Parent = PL
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 579, 0, 28)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+UICorner_4.Parent = TextLabel_2
+
+ImageLabel_3.Parent = TextLabel_2
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.Position = UDim2.new(0.0430000015, 0, 0.25, 0)
+ImageLabel_3.Size = UDim2.new(0, 263, 0, 38)
+ImageLabel_3.ZIndex = 2
+ImageLabel_3.Image = "rbxassetid://12399222467"
+ImageLabel_3.ScaleType = Enum.ScaleType.Crop
+
+ImageLabel_4.Parent = TextLabel_2
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.Position = UDim2.new(-0.0207253881, 0, -0.178571433, 0)
+ImageLabel_4.Size = UDim2.new(0, 62, 0, 37)
+ImageLabel_4.ZIndex = 2
+ImageLabel_4.Image = "rbxassetid://12398663215"
+ImageLabel_4.ScaleType = Enum.ScaleType.Fit
+
+TextButton_2.Parent = ImageLabel_4
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Size = UDim2.new(0, 62, 0, 37)
+TextButton_2.ZIndex = 3
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+TextButton_2.MouseButton1Click:Connect(function()
+    Main.Visible = true
+    PL.Visible = false
+end)
+
+Frame_6.Parent = TextLabel_2
+Frame_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(0, 0, 0.535714269, 0)
+Frame_6.Size = UDim2.new(0, 579, 0, 13)
+
+close_2.Name = "close"
+close_2.Parent = TextLabel_2
+close_2.BackgroundTransparency = 1.000
+close_2.Position = UDim2.new(0.955958545, 0, 0.0357142985, 0)
+close_2.Size = UDim2.new(0, 25, 0, 25)
+close_2.ZIndex = 2
+close_2.Image = "rbxassetid://3926305904"
+close_2.ImageRectOffset = Vector2.new(284, 4)
+close_2.ImageRectSize = Vector2.new(24, 24)
+
+CloseButton_2.Name = "Close Button"
+CloseButton_2.Parent = close_2
+CloseButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton_2.BackgroundTransparency = 1.000
+CloseButton_2.Size = UDim2.new(0, 25, 0, 25)
+CloseButton_2.ZIndex = 3
+CloseButton_2.Font = Enum.Font.SourceSans
+CloseButton_2.Text = ""
+CloseButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton_2.TextSize = 14.000
+CloseButton_2.MouseButton1Click:Connect(function()
+	TeleportGUI:Destroy()
+end)
+
+remove_2.Name = "remove"
+remove_2.Parent = TextLabel_2
+remove_2.BackgroundTransparency = 1.000
+remove_2.LayoutOrder = 4
+remove_2.Position = UDim2.new(0.912780643, 0, 0.0357142985, 0)
+remove_2.Size = UDim2.new(0, 25, 0, 25)
+remove_2.ZIndex = 2
+remove_2.Image = "rbxassetid://3926307971"
+remove_2.ImageRectOffset = Vector2.new(884, 284)
+remove_2.ImageRectSize = Vector2.new(36, 36)
+
+MinimiseButton_2.Name = "Minimise Button"
+MinimiseButton_2.Parent = remove_2
+MinimiseButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MinimiseButton_2.BackgroundTransparency = 1.000
+MinimiseButton_2.Size = UDim2.new(0, 25, 0, 25)
+MinimiseButton_2.ZIndex = 3
+MinimiseButton_2.Font = Enum.Font.SourceSans
+MinimiseButton_2.Text = ""
+MinimiseButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+MinimiseButton_2.TextSize = 14.000
+MinimiseButton_2.MouseButton1Click:Connect(function()
+    if _G.toggle then
+	Frame_3.Visible = false
+	PL.Size = UDim2.new(0, 579 , 0, 28)
+	_G.toggle = false
+    elseif not _G.toggle then
+        Frame_3.Visible = false
+        PL.Size = UDim2.new(0, 579, 0, 333)
+    _G.toggle = true
+    end
+end)
+
+Frame_7.Parent = PL
+Frame_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_7.BorderSizePixel = 0
+Frame_7.Position = UDim2.new(0, 0, 0.0840840861, 0)
+Frame_7.Size = UDim2.new(0, 50, 0, 305)
+
+UICorner_5.Parent = Frame_7
+
+Frame_8.Parent = Frame_7
+Frame_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_8.BorderSizePixel = 0
+Frame_8.Position = UDim2.new(0, 0, -0.00116186927, 0)
+Frame_8.Size = UDim2.new(0, 49, 0, 12)
+
+Frame_9.Parent = Frame_7
+Frame_9.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Frame_9.BorderSizePixel = 0
+Frame_9.Size = UDim2.new(0, 579, 0, 1)
+Frame_9.ZIndex = 3
+
+Frame_10.Parent = Frame_7
+Frame_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_10.BorderSizePixel = 0
+Frame_10.Position = UDim2.new(0.699999988, 0, -0.00116186915, 0)
+Frame_10.Size = UDim2.new(0, 15, 0, 305)
+
+ImageButton_2.Parent = Frame_7
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_2.Position = UDim2.new(0.180000007, 0, 0.0359999985, 0)
+ImageButton_2.Size = UDim2.new(0, 30, 0, 30)
+ImageButton_2.ZIndex = 2
+ImageButton_2.Image = "rbxassetid://12398991609"
+
+UICorner_6.Parent = PL
+
+Amory.Name = "Amory"
+Amory.Parent = PL
+Amory.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Amory.Position = UDim2.new(0.101899825, 0, 0.10510511, 0)
+Amory.Size = UDim2.new(0, 76, 0, 36)
+Amory.Font = Enum.Font.Gotham
+Amory.Text = "Armory"
+Amory.TextColor3 = Color3.fromRGB(0, 0, 0)
+Amory.TextScaled = true
+Amory.TextSize = 14.000
+Amory.TextWrapped = true
+Amory.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(835, 100, 2267)
+end)
+
+UICorner_7.Parent = Amory
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient.Parent = Amory
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(249, 255, 244)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(193, 193, 193))}
+UIGradient_2.Offset = Vector2.new(-0.00837162044, -0.00839645788)
+UIGradient_2.Parent = PL
+
+Backofnexus.Name = "Back of nexus"
+Backofnexus.Parent = PL
+Backofnexus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Backofnexus.Position = UDim2.new(0.276338518, 0, 0.10510511, 0)
+Backofnexus.Size = UDim2.new(0, 76, 0, 36)
+Backofnexus.Font = Enum.Font.Gotham
+Backofnexus.Text = "Back of nexus"
+Backofnexus.TextColor3 = Color3.fromRGB(0, 0, 0)
+Backofnexus.TextScaled = true
+Backofnexus.TextSize = 14.000
+Backofnexus.TextWrapped = true
+Backofnexus.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(987, 100, 2257)
+end)
+
+UICorner_8.Parent = Backofnexus
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_3.Parent = Backofnexus
+
+Breakinthemap.Name = "Break in the map"
+Breakinthemap.Parent = PL
+Breakinthemap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Breakinthemap.Position = UDim2.new(0.623488784, 0, 0.10510511, 0)
+Breakinthemap.Size = UDim2.new(0, 76, 0, 36)
+Breakinthemap.Font = Enum.Font.Gotham
+Breakinthemap.Text = "Break in the map"
+Breakinthemap.TextColor3 = Color3.fromRGB(0, 0, 0)
+Breakinthemap.TextScaled = true
+Breakinthemap.TextSize = 14.000
+Breakinthemap.TextWrapped = true
+Breakinthemap.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1254, 69, 1377)
+end)
+
+UICorner_9.Parent = Breakinthemap
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_4.Parent = Breakinthemap
+
+Backrooms.Name = "Backrooms"
+Backrooms.Parent = PL
+Backrooms.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Backrooms.Position = UDim2.new(0.449050099, 0, 0.10510511, 0)
+Backrooms.Size = UDim2.new(0, 76, 0, 36)
+Backrooms.Font = Enum.Font.Gotham
+Backrooms.Text = "Backrooms"
+Backrooms.TextColor3 = Color3.fromRGB(0, 0, 0)
+Backrooms.TextScaled = true
+Backrooms.TextSize = 14.000
+Backrooms.TextWrapped = true
+Backrooms.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(670, 206, 3161)
+end)
+
+UICorner_10.Parent = Backrooms
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_5.Parent = Backrooms
+
+Breakroom.Name = "Break room"
+Breakroom.Parent = PL
+Breakroom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Breakroom.Position = UDim2.new(0.804835916, 0, 0.10510511, 0)
+Breakroom.Size = UDim2.new(0, 76, 0, 36)
+Breakroom.Font = Enum.Font.Gotham
+Breakroom.Text = "Break room"
+Breakroom.TextColor3 = Color3.fromRGB(0, 0, 0)
+Breakroom.TextScaled = true
+Breakroom.TextSize = 14.000
+Breakroom.TextWrapped = true
+Breakroom.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(801, 100, 2294)
+end)
+
+UICorner_11.Parent = Breakroom
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_6.Parent = Breakroom
+
+Bottomtower.Name = "Bottom tower"
+Bottomtower.Parent = PL
+Bottomtower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bottomtower.Position = UDim2.new(0.101899825, 0, 0.264264256, 0)
+Bottomtower.Size = UDim2.new(0, 76, 0, 36)
+Bottomtower.Font = Enum.Font.Gotham
+Bottomtower.Text = "Bottom tower"
+Bottomtower.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bottomtower.TextScaled = true
+Bottomtower.TextSize = 14.000
+Bottomtower.TextWrapped = true
+Bottomtower.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(823, 98, 2571)
+end)
+
+UICorner_12.Parent = Bottomtower
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_7.Parent = Bottomtower
+
+Cafe.Name = "Cafe"
+Cafe.Parent = PL
+Cafe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cafe.Position = UDim2.new(0.276338518, 0, 0.264264256, 0)
+Cafe.Size = UDim2.new(0, 76, 0, 36)
+Cafe.Font = Enum.Font.Gotham
+Cafe.Text = "Cafe"
+Cafe.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cafe.TextScaled = true
+Cafe.TextSize = 14.000
+Cafe.TextWrapped = true
+Cafe.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(930, 100, 2292)
+end)
+
+UICorner_13.Parent = Cafe
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_8.Parent = Cafe
+
+Copcarspawners.Name = "Cop car spawners"
+Copcarspawners.Parent = PL
+Copcarspawners.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Copcarspawners.Position = UDim2.new(0.449050099, 0, 0.264264256, 0)
+Copcarspawners.Size = UDim2.new(0, 76, 0, 36)
+Copcarspawners.Font = Enum.Font.Gotham
+Copcarspawners.Text = "Cop car spawners"
+Copcarspawners.TextColor3 = Color3.fromRGB(0, 0, 0)
+Copcarspawners.TextScaled = true
+Copcarspawners.TextSize = 14.000
+Copcarspawners.TextWrapped = true
+Copcarspawners.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(610, 98, 2506)
+end)
+
+UICorner_14.Parent = Copcarspawners
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_9.Parent = Copcarspawners
+
+Crimpads.Name = "Crim pads"
+Crimpads.Parent = PL
+Crimpads.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Crimpads.Position = UDim2.new(0.623488784, 0, 0.264264256, 0)
+Crimpads.Size = UDim2.new(0, 76, 0, 36)
+Crimpads.Font = Enum.Font.Gotham
+Crimpads.Text = "Crim pads"
+Crimpads.TextColor3 = Color3.fromRGB(0, 0, 0)
+Crimpads.TextScaled = true
+Crimpads.TextSize = 14.000
+Crimpads.TextWrapped = true
+Crimpads.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-916, 95, 2135)
+end)
+
+UICorner_15.Parent = Crimpads
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_10.Parent = Crimpads
+
+Crimwarehouse.Name = "Crim warehouse"
+Crimwarehouse.Parent = PL
+Crimwarehouse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Crimwarehouse.Position = UDim2.new(0.804835916, 0, 0.264264256, 0)
+Crimwarehouse.Size = UDim2.new(0, 76, 0, 36)
+Crimwarehouse.Font = Enum.Font.Gotham
+Crimwarehouse.Text = "Crim warehouse"
+Crimwarehouse.TextColor3 = Color3.fromRGB(0, 0, 0)
+Crimwarehouse.TextScaled = true
+Crimwarehouse.TextSize = 14.000
+Crimwarehouse.TextWrapped = true
+Crimwarehouse.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-940, 94, 2065)
+end)
+
+UICorner_16.Parent = Crimwarehouse
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_11.Parent = Crimwarehouse
+
+Crouchglitcharea.Name = "Crouch glitch area"
+Crouchglitcharea.Parent = PL
+Crouchglitcharea.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Crouchglitcharea.Position = UDim2.new(0.101899825, 0, 0.420420408, 0)
+Crouchglitcharea.Size = UDim2.new(0, 76, 0, 36)
+Crouchglitcharea.Font = Enum.Font.Gotham
+Crouchglitcharea.Text = "Crouch glitch area"
+Crouchglitcharea.TextColor3 = Color3.fromRGB(0, 0, 0)
+Crouchglitcharea.TextScaled = true
+Crouchglitcharea.TextSize = 14.000
+Crouchglitcharea.TextWrapped = true
+Crouchglitcharea.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-174, 55, 2577)
+end)
+
+UICorner_17.Parent = Crouchglitcharea
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_12.Parent = Crouchglitcharea
+
+Floatingisland.Name = "Floating island"
+Floatingisland.Parent = PL
+Floatingisland.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Floatingisland.Position = UDim2.new(0.276338518, 0, 0.420420408, 0)
+Floatingisland.Size = UDim2.new(0, 76, 0, 36)
+Floatingisland.Font = Enum.Font.Gotham
+Floatingisland.Text = "Floating island"
+Floatingisland.TextColor3 = Color3.fromRGB(0, 0, 0)
+Floatingisland.TextScaled = true
+Floatingisland.TextSize = 14.000
+Floatingisland.TextWrapped = true
+Floatingisland.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1322, 120, 1734 )
+end)
+
+UICorner_18.Parent = Floatingisland
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_13.Parent = Floatingisland
+
+Frontdesk.Name = "Front desk"
+Frontdesk.Parent = PL
+Frontdesk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frontdesk.Position = UDim2.new(0.449050099, 0, 0.420420408, 0)
+Frontdesk.Size = UDim2.new(0, 76, 0, 36)
+Frontdesk.Font = Enum.Font.Gotham
+Frontdesk.Text = "Front desk"
+Frontdesk.TextColor3 = Color3.fromRGB(0, 0, 0)
+Frontdesk.TextScaled = true
+Frontdesk.TextSize = 14.000
+Frontdesk.TextWrapped = true
+Frontdesk.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(725, 100, 2254)
+end)
+
+UICorner_19.Parent = Frontdesk
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_14.Parent = Frontdesk
+
+Kitchen.Name = "Kitchen"
+Kitchen.Parent = PL
+Kitchen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Kitchen.Position = UDim2.new(0.101899803, 0, 0.579579592, 0)
+Kitchen.Size = UDim2.new(0, 76, 0, 36)
+Kitchen.Font = Enum.Font.Gotham
+Kitchen.Text = "Guard spawns"
+Kitchen.TextColor3 = Color3.fromRGB(0, 0, 0)
+Kitchen.TextScaled = true
+Kitchen.TextSize = 14.000
+Kitchen.TextWrapped = true
+Kitchen.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(831, 100, 2311)
+end)
+
+UICorner_20.Parent = Kitchen
+
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_15.Parent = Kitchen
+
+Neutralspawn.Name = "Neutral spawn"
+Neutralspawn.Parent = PL
+Neutralspawn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Neutralspawn.Position = UDim2.new(0.276338488, 0, 0.582582593, 0)
+Neutralspawn.Size = UDim2.new(0, 76, 0, 36)
+Neutralspawn.Font = Enum.Font.Gotham
+Neutralspawn.Text = "Kitchen"
+Neutralspawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+Neutralspawn.TextScaled = true
+Neutralspawn.TextSize = 14.000
+Neutralspawn.TextWrapped = true
+Neutralspawn.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(918, 100, 2227)
+end)
+
+UICorner_21.Parent = Neutralspawn
+
+UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_16.Parent = Neutralspawn
+
+Nexus.Name = "Nexus"
+Nexus.Parent = PL
+Nexus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Nexus.Position = UDim2.new(0.449050069, 0, 0.582582593, 0)
+Nexus.Size = UDim2.new(0, 76, 0, 36)
+Nexus.Font = Enum.Font.Gotham
+Nexus.Text = "Neutral spawn"
+Nexus.TextColor3 = Color3.fromRGB(0, 0, 0)
+Nexus.TextScaled = true
+Nexus.TextSize = 14.000
+Nexus.TextWrapped = true
+Nexus.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(881, 28, 2345)
+end)
+
+UICorner_22.Parent = Nexus
+
+UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_17.Parent = Nexus
+
+Roofofprison.Name = "Roof of prison"
+Roofofprison.Parent = PL
+Roofofprison.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roofofprison.Position = UDim2.new(0.623488784, 0, 0.582582593, 0)
+Roofofprison.Size = UDim2.new(0, 76, 0, 36)
+Roofofprison.Font = Enum.Font.Gotham
+Roofofprison.Text = "Nexus"
+Roofofprison.TextColor3 = Color3.fromRGB(0, 0, 0)
+Roofofprison.TextScaled = true
+Roofofprison.TextSize = 14.000
+Roofofprison.TextWrapped = true
+Roofofprison.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(928, 100, 2373)
+end)
+
+UICorner_23.Parent = Roofofprison
+
+UIGradient_18.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_18.Parent = Roofofprison
+
+Surveillanceroom.Name = "Surveillance room"
+Surveillanceroom.Parent = PL
+Surveillanceroom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Surveillanceroom.Position = UDim2.new(0.804835916, 0, 0.582582593, 0)
+Surveillanceroom.Size = UDim2.new(0, 76, 0, 36)
+Surveillanceroom.Font = Enum.Font.Gotham
+Surveillanceroom.Text = "Roof of prison"
+Surveillanceroom.TextColor3 = Color3.fromRGB(0, 0, 0)
+Surveillanceroom.TextScaled = true
+Surveillanceroom.TextSize = 14.000
+Surveillanceroom.TextWrapped = true
+Surveillanceroom.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(827, 119, 2342)
+end)
+
+UICorner_24.Parent = Surveillanceroom
+
+UIGradient_19.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_19.Parent = Surveillanceroom
+
+Thesexdungeon.Name = "The sex dungeon"
+Thesexdungeon.Parent = PL
+Thesexdungeon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Thesexdungeon.Position = UDim2.new(0.276338488, 0, 0.735735774, 0)
+Thesexdungeon.Size = UDim2.new(0, 76, 0, 36)
+Thesexdungeon.Font = Enum.Font.Gotham
+Thesexdungeon.Text = "Surveillance room"
+Thesexdungeon.TextColor3 = Color3.fromRGB(0, 0, 0)
+Thesexdungeon.TextScaled = true
+Thesexdungeon.TextSize = 14.000
+Thesexdungeon.TextWrapped = true
+Thesexdungeon.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(795, 100, 2331)
+end)
+
+UICorner_25.Parent = Thesexdungeon
+
+UIGradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_20.Parent = Thesexdungeon
+
+TextButton.Parent = PL
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.449050069, 0, 0.738738775, 0)
+TextButton.Size = UDim2.new(0, 76, 0, 36)
+TextButton.Font = Enum.Font.Gotham
+TextButton.Text = "The sex dungeon"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-914, 94, 1994)
+end)
+
+UICorner_26.Parent = TextButton
+
+UIGradient_21.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_21.Parent = TextButton
+
+Topoftower.Name = "Top of tower"
+Topoftower.Parent = PL
+Topoftower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Topoftower.Position = UDim2.new(0.623488784, 0, 0.738738775, 0)
+Topoftower.Size = UDim2.new(0, 76, 0, 36)
+Topoftower.Font = Enum.Font.Gotham
+Topoftower.Text = "The sex dungeon 2"
+Topoftower.TextColor3 = Color3.fromRGB(0, 0, 0)
+Topoftower.TextScaled = true
+Topoftower.TextSize = 14.000
+Topoftower.TextWrapped = true
+Topoftower.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-914, 94, 1919)
+end)
+
+UICorner_27.Parent = Topoftower
+
+UIGradient_22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_22.Parent = Topoftower
+
+Underthemapgrassarea.Name = "Under the map grass area"
+Underthemapgrassarea.Parent = PL
+Underthemapgrassarea.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Underthemapgrassarea.Position = UDim2.new(0.804835916, 0, 0.738738775, 0)
+Underthemapgrassarea.Size = UDim2.new(0, 76, 0, 36)
+Underthemapgrassarea.Font = Enum.Font.Gotham
+Underthemapgrassarea.Text = "Top of tower"
+Underthemapgrassarea.TextColor3 = Color3.fromRGB(0, 0, 0)
+Underthemapgrassarea.TextScaled = true
+Underthemapgrassarea.TextSize = 14.000
+Underthemapgrassarea.TextWrapped = true
+Underthemapgrassarea.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(823, 130, 2569)
+end)
+
+UICorner_28.Parent = Underthemapgrassarea
+
+UIGradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_23.Parent = Underthemapgrassarea
+
+Underthemaproad.Name = "Under the map road"
+Underthemaproad.Parent = PL
+Underthemaproad.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Underthemaproad.Position = UDim2.new(0.101899803, 0, 0.888888955, 0)
+Underthemaproad.Size = UDim2.new(0, 76, 0, 36)
+Underthemaproad.Font = Enum.Font.Gotham
+Underthemaproad.Text = "Under the map grass area"
+Underthemaproad.TextColor3 = Color3.fromRGB(0, 0, 0)
+Underthemaproad.TextScaled = true
+Underthemaproad.TextSize = 14.000
+Underthemaproad.TextWrapped = true
+Underthemaproad.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-395, 11, 1450)
+end)
+
+UICorner_29.Parent = Underthemaproad
+
+UIGradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_24.Parent = Underthemaproad
+
+Unusedroom.Name = "Unused room"
+Unusedroom.Parent = PL
+Unusedroom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Unusedroom.Position = UDim2.new(0.276338518, 0, 0.888888955, 0)
+Unusedroom.Size = UDim2.new(0, 76, 0, 36)
+Unusedroom.Font = Enum.Font.Gotham
+Unusedroom.Text = "Under the map road"
+Unusedroom.TextColor3 = Color3.fromRGB(0, 0, 0)
+Unusedroom.TextScaled = true
+Unusedroom.TextSize = 14.000
+Unusedroom.TextWrapped = true
+Unusedroom.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1205, 68, 1848)
+end)
+
+UICorner_30.Parent = Unusedroom
+
+UIGradient_25.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_25.Parent = Unusedroom
+
+Unusedroom_2.Name = "Unused room"
+Unusedroom_2.Parent = PL
+Unusedroom_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Unusedroom_2.Position = UDim2.new(0.449050069, 0, 0.891891956, 0)
+Unusedroom_2.Size = UDim2.new(0, 76, 0, 36)
+Unusedroom_2.Font = Enum.Font.Gotham
+Unusedroom_2.Text = "Unused room"
+Unusedroom_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Unusedroom_2.TextScaled = true
+Unusedroom_2.TextSize = 14.000
+Unusedroom_2.TextWrapped = true
+Unusedroom_2.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(685, 100, 2353)
+end)
+
+UICorner_31.Parent = Unusedroom_2
+
+UIGradient_26.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_26.Parent = Unusedroom_2
+
+Frontwall.Name = "Front wall"
+Frontwall.Parent = PL
+Frontwall.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frontwall.Position = UDim2.new(0.623488784, 0, 0.417417496, 0)
+Frontwall.Size = UDim2.new(0, 76, 0, 36)
+Frontwall.Font = Enum.Font.Gotham
+Frontwall.Text = "Front wall"
+Frontwall.TextColor3 = Color3.fromRGB(0, 0, 0)
+Frontwall.TextScaled = true
+Frontwall.TextSize = 14.000
+Frontwall.TextWrapped = true
+Frontwall.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(506, 125, 2310)
+end)
+
+UICorner_32.Parent = Frontwall
+
+UIGradient_27.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_27.Parent = Frontwall
+
+Gate.Name = "Gate"
+Gate.Parent = PL
+Gate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gate.Position = UDim2.new(0.804835916, 0, 0.417417496, 0)
+Gate.Size = UDim2.new(0, 76, 0, 36)
+Gate.Font = Enum.Font.Gotham
+Gate.Text = "Gate"
+Gate.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gate.TextScaled = true
+Gate.TextSize = 14.000
+Gate.TextWrapped = true
+Gate.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(505, 102, 2251)
+end)
+
+UICorner_33.Parent = Gate
+
+UIGradient_28.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_28.Parent = Gate
+
+Skywallbreak.Name = "Skywall break"
+Skywallbreak.Parent = PL
+Skywallbreak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Skywallbreak.Position = UDim2.new(0.101899832, 0, 0.735735774, 0)
+Skywallbreak.Size = UDim2.new(0, 76, 0, 36)
+Skywallbreak.Font = Enum.Font.Gotham
+Skywallbreak.Text = "Skywall break"
+Skywallbreak.TextColor3 = Color3.fromRGB(0, 0, 0)
+Skywallbreak.TextScaled = true
+Skywallbreak.TextSize = 14.000
+Skywallbreak.TextWrapped = true
+Skywallbreak.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-757, 126, 2661)
+end)
+
+UICorner_34.Parent = Skywallbreak
+
+UIGradient_29.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_29.Parent = Skywallbreak
+
+Yard.Name = "Yard"
+Yard.Parent = PL
+Yard.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Yard.Position = UDim2.new(0.623488784, 0, 0.891891956, 0)
+Yard.Size = UDim2.new(0, 76, 0, 36)
+Yard.Font = Enum.Font.Gotham
+Yard.Text = "Yard"
+Yard.TextColor3 = Color3.fromRGB(0, 0, 0)
+Yard.TextScaled = true
+Yard.TextSize = 14.000
+Yard.TextWrapped = true
+Yard.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(731, 98, 2507)
+end)
+
+UICorner_35.Parent = Yard
+
+UIGradient_30.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_30.Parent = Yard
+
+Yardbutweird.Name = "Yard but weird"
+Yardbutweird.Parent = PL
+Yardbutweird.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Yardbutweird.Position = UDim2.new(0.804835916, 0, 0.891891956, 0)
+Yardbutweird.Size = UDim2.new(0, 76, 0, 36)
+Yardbutweird.Font = Enum.Font.Gotham
+Yardbutweird.Text = "Yard but weird"
+Yardbutweird.TextColor3 = Color3.fromRGB(0, 0, 0)
+Yardbutweird.TextScaled = true
+Yardbutweird.TextSize = 14.000
+Yardbutweird.TextWrapped = true
+Yardbutweird.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1031, 98, 2413)
+end)
+
+UICorner_36.Parent = Yardbutweird
+
+UIGradient_31.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(193, 193, 193)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(226, 226, 226))}
+UIGradient_31.Parent = Yardbutweird
+
+-- Scripts:
+
+local function NRTCFK_fake_script() -- ImageLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel_2)
+
+	local scp = script.Parent
+	
+	local TweenService = game:GetService("TweenService")
+	
+	local tweenInfo = TweenInfo.new(
+		5, -- The time the tween takes to complete
+		Enum.EasingStyle.Linear, -- The tween style in this case it is Linear
+		Enum.EasingDirection.Out, -- EasingDirection
+		-1, -- How many times you want the tween to repeat. If you make it less than 0 it will repeat forever.
+		false, -- Reverse?
+		0 -- Delay
+	)
+	
+	local Tween = TweenService:Create(scp, tweenInfo, {Rotation = 360}) -- Creates the tween with the TweenInfo and what properties you want to change
+	
+	Tween:Play()
+end
+coroutine.wrap(NRTCFK_fake_script)()
+local function ZYYI_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	--[[Configuration]]--
+	
+	local warperFramerate = 5 -- Do i need to explain this? (Caps at 60 cuz roblox bad) (additionally, this does not support frame skipping)
+	local lastFrame = 1 -- Frame the animation starts at
+	local frames = 5*4+1 -- Amount of frames in the animation
+	local rows = 5 -- Amount of vertical frames in the animation
+	local columns = 5 -- Amount of horizontal frames in the animation
+	
+	local AnimationFrameWrapper = script.Parent.Warper -- The parent frame to the animated sprite, has clipping enabled so that only one frame can be displayed at once
+	
+	local AnimatedSprite = AnimationFrameWrapper.Animated -- The image you're animating
+	
+	local t = tick() -- Used in animation framerate timing
+	
+	AnimatedSprite.Size = UDim2.new(columns,0,rows,0) -- Sets the size of the image in case you set it wrong, really easy tho
+	
+	local function AnimationFunction()
+		-- Extra animation function that was used in the loading screen, can be used to execute special code during an animation
+		--(eg u were lazy and decided to change the transparency via the animation instead of doing it in the sprite)
+	end
+	
+	local function UpdateWarper(f)
+		if tick()-t >= 1/warperFramerate then -- check if enough time has passed between frames to update the sprite
+			lastFrame = lastFrame + 1
+			if lastFrame > frames then lastFrame = 1 end -- Loop gif
+			local CurrentColumn = lastFrame -- set the current horizontal frame to the current frame
+			local CurrentRow = 1
+			repeat -- This gets what the current column and row should be based on the current frame (this is why we set CurrentColumn to lastFrame earlier)
+				if CurrentColumn>columns then
+					CurrentColumn = CurrentColumn - columns
+					CurrentRow = CurrentRow + 1
+				end
+			until not(CurrentColumn>columns)
+			
+			-- Update the image label
+			AnimationFrameWrapper.Animated.Position = UDim2.new(-(CurrentColumn-1),0,-(CurrentRow-1),0)
+			print(CurrentColumn,CurrentRow)
+			f() -- This was used originally to 
+			
+			t = tick()
+		end
+	end
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		UpdateWarper(AnimationFunction)
+	end)
+	-- you can tie this into any existing runservice you might already have
+end
+coroutine.wrap(ZYYI_fake_script)()
+local function XTWRO_fake_script() -- ImageLabel_4.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel_4)
+
+	local scp = script.Parent
+	
+	local TweenService = game:GetService("TweenService")
+	
+	local tweenInfo = TweenInfo.new(
+		5, -- The time the tween takes to complete
+		Enum.EasingStyle.Linear, -- The tween style in this case it is Linear
+		Enum.EasingDirection.Out, -- EasingDirection
+		-1, -- How many times you want the tween to repeat. If you make it less than 0 it will repeat forever.
+		false, -- Reverse?
+		0 -- Delay
+	)
+	
+	local Tween = TweenService:Create(scp, tweenInfo, {Rotation = 360}) -- Creates the tween with the TweenInfo and what properties you want to change
+	
+	Tween:Play()
+end
+coroutine.wrap(XTWRO_fake_script)()
