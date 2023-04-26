@@ -1,0 +1,431 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local W = Instance.new("TextLabel")
+local A = Instance.new("TextLabel")
+local S = Instance.new("TextLabel")
+local D = Instance.new("TextLabel")
+local LMB = Instance.new("TextLabel")
+local RMB = Instance.new("TextLabel")
+local SpaceBar = Instance.new("TextLabel")
+local FPS = Instance.new("TextLabel")
+local CPS = Instance.new("TextLabel")
+local Time = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.889941156, 0, 0.0513245016, 0)
+Frame.Size = UDim2.new(0, 100, 0, 276)
+Frame.Draggable = true
+
+W.Name = "W"
+W.Parent = Frame
+W.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+W.BackgroundTransparency = 0.650
+W.BorderSizePixel = 0
+W.Position = UDim2.new(0.349999994, 0, 0, 0)
+W.Size = UDim2.new(0, 30, 0, 30)
+W.Font = Enum.Font.GothamBold
+W.Text = "W"
+W.TextColor3 = Color3.fromRGB(255, 255, 255)
+W.TextScaled = true
+W.TextSize = 14.000
+W.TextWrapped = true
+W.Draggable = true
+
+A.Name = "A"
+A.Parent = Frame
+A.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+A.BackgroundTransparency = 0.650
+A.BorderSizePixel = 0
+A.Position = UDim2.new(0, 0, 0.125, 0)
+A.Size = UDim2.new(0, 30, 0, 30)
+A.Font = Enum.Font.GothamBold
+A.Text = "A"
+A.TextColor3 = Color3.fromRGB(255, 255, 255)
+A.TextScaled = true
+A.TextSize = 14.000
+A.TextWrapped = true
+A.Draggable = true
+
+S.Name = "S"
+S.Parent = Frame
+S.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+S.BackgroundTransparency = 0.650
+S.BorderSizePixel = 0
+S.Position = UDim2.new(0.349999994, 0, 0.125, 0)
+S.Size = UDim2.new(0, 30, 0, 30)
+S.Font = Enum.Font.GothamBold
+S.Text = "S"
+S.TextColor3 = Color3.fromRGB(255, 255, 255)
+S.TextScaled = true
+S.TextSize = 14.000
+S.TextWrapped = true
+S.Draggable = true
+
+D.Name = "D"
+D.Parent = Frame
+D.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+D.BackgroundTransparency = 0.650
+D.BorderSizePixel = 0
+D.Position = UDim2.new(0.699999988, 0, 0.125, 0)
+D.Size = UDim2.new(0, 30, 0, 30)
+D.Font = Enum.Font.GothamBold
+D.Text = "D"
+D.TextColor3 = Color3.fromRGB(255, 255, 255)
+D.TextScaled = true
+D.TextSize = 14.000
+D.TextWrapped = true
+D.Draggable = true
+
+LMB.Name = "LMB"
+LMB.Parent = Frame
+LMB.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+LMB.BackgroundTransparency = 0.650
+LMB.BorderSizePixel = 0
+LMB.Position = UDim2.new(0, 0, 0.268583328, 0)
+LMB.Size = UDim2.new(0, 45, 0, 30)
+LMB.Font = Enum.Font.GothamBold
+LMB.Text = "LMB"
+LMB.TextColor3 = Color3.fromRGB(255, 255, 255)
+LMB.TextScaled = true
+LMB.TextSize = 14.000
+LMB.TextWrapped = true
+LMB.Draggable = true
+
+RMB.Name = "RMB"
+RMB.Parent = Frame
+RMB.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+RMB.BackgroundTransparency = 0.650
+RMB.BorderSizePixel = 0
+RMB.Position = UDim2.new(0.550000012, 0, 0.268583328, 0)
+RMB.Size = UDim2.new(0, 45, 0, 30)
+RMB.Font = Enum.Font.GothamBold
+RMB.Text = "RMB"
+RMB.TextColor3 = Color3.fromRGB(255, 255, 255)
+RMB.TextScaled = true
+RMB.TextSize = 14.000
+RMB.TextWrapped = true
+RMB.Draggable = true
+
+SpaceBar.Name = "SpaceBar"
+SpaceBar.Parent = Frame
+SpaceBar.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+SpaceBar.BackgroundTransparency = 0.650
+SpaceBar.BorderSizePixel = 0
+SpaceBar.Position = UDim2.new(0, 0, 0.406990409, 0)
+SpaceBar.Size = UDim2.new(0, 100, 0, 30)
+SpaceBar.Font = Enum.Font.GothamBold
+SpaceBar.Text = "━━━"
+SpaceBar.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpaceBar.TextScaled = true
+SpaceBar.TextSize = 14.000
+SpaceBar.TextWrapped = true
+SpaceBar.Draggable = true
+
+FPS.Name = "FPS"
+FPS.Parent = Frame
+FPS.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+FPS.BackgroundTransparency = 0.650
+FPS.BorderSizePixel = 0
+FPS.Position = UDim2.new(0, 0, 0.543915749, 0)
+FPS.Size = UDim2.new(0, 100, 0, 30)
+FPS.Font = Enum.Font.GothamBold
+FPS.Text = "FPS"
+FPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPS.TextScaled = true
+FPS.TextSize = 14.000
+FPS.TextWrapped = true
+FPS.Draggable = true
+
+CPS.Name = "CPS"
+CPS.Parent = Frame
+CPS.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+CPS.BackgroundTransparency = 0.650
+CPS.BorderSizePixel = 0
+CPS.Position = UDim2.new(0, 0, 0.680841088, 0)
+CPS.Size = UDim2.new(0, 100, 0, 30)
+CPS.Font = Enum.Font.GothamBold
+CPS.Text = "CPS"
+CPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+CPS.TextScaled = true
+CPS.TextSize = 14.000
+CPS.TextWrapped = true
+CPS.Draggable = true
+
+Time.Name = "Time"
+Time.Parent = Frame
+Time.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Time.BackgroundTransparency = 0.650
+Time.BorderSizePixel = 0
+Time.Position = UDim2.new(0, 0, 0.814774215, 0)
+Time.Size = UDim2.new(0, 100, 0, 30)
+Time.Font = Enum.Font.GothamBold
+Time.Text = "Time"
+Time.TextColor3 = Color3.fromRGB(255, 255, 255)
+Time.TextScaled = true
+Time.TextSize = 14.000
+Time.TextWrapped = true
+Time.Draggable = true
+
+-- Scripts:
+
+local function VWJDJ_fake_script() -- W.LocalScript 
+	local script = Instance.new('LocalScript', W)
+
+	local Key = script.Parent
+	local toggle = false
+	local uis = game:GetService("UserInputService")
+
+	uis.InputBegan:Connect(function(key, gp)
+		task.spawn(function()
+			while uis:IsKeyDown(Enum.KeyCode.W) do
+				Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Key.TextColor3 = Color3.fromRGB(18, 18, 18)
+				wait()
+			end
+			Key.TextColor3 = Color3.fromRGB(225,225,225)
+			Key.BackgroundColor3 = Color3.fromRGB(18,18,18)
+		end)
+	end)
+	
+end
+coroutine.wrap(VWJDJ_fake_script)()
+local function ERVKHJ_fake_script() -- A.LocalScript 
+	local script = Instance.new('LocalScript', A)
+
+	local Key = script.Parent
+	local toggle = false
+	local uis = game:GetService("UserInputService")
+
+	uis.InputBegan:Connect(function(key, gp)
+		task.spawn(function()
+			while uis:IsKeyDown(Enum.KeyCode.A) do
+				Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Key.TextColor3 = Color3.fromRGB(18, 18, 18)
+				wait()
+			end
+			Key.TextColor3 = Color3.fromRGB(225,225,225)
+			Key.BackgroundColor3 = Color3.fromRGB(18,18,18)
+		end)
+	end)
+	
+end
+coroutine.wrap(ERVKHJ_fake_script)()
+local function ZLNAPZV_fake_script() -- S.LocalScript 
+	local script = Instance.new('LocalScript', S)
+
+	local Key = script.Parent
+	local toggle = false
+	local uis = game:GetService("UserInputService")
+
+	uis.InputBegan:Connect(function(key, gp)
+		task.spawn(function()
+			while uis:IsKeyDown(Enum.KeyCode.S) do
+				Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Key.TextColor3 = Color3.fromRGB(18, 18, 18)
+				wait()
+			end
+			Key.TextColor3 = Color3.fromRGB(225,225,225)
+			Key.BackgroundColor3 = Color3.fromRGB(18,18,18)
+		end)
+	end)
+	
+end
+coroutine.wrap(ZLNAPZV_fake_script)()
+local function VKUARM_fake_script() -- D.LocalScript 
+	local script = Instance.new('LocalScript', D)
+
+	local Key = script.Parent
+	local toggle = false
+	local uis = game:GetService("UserInputService")
+
+	uis.InputBegan:Connect(function(key, gp)
+		task.spawn(function()
+			while uis:IsKeyDown(Enum.KeyCode.D) do
+				Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Key.TextColor3 = Color3.fromRGB(18, 18, 18)
+				wait()
+			end
+			Key.TextColor3 = Color3.fromRGB(225,225,225)
+			Key.BackgroundColor3 = Color3.fromRGB(18,18,18)
+		end)
+	end)
+	
+end
+coroutine.wrap(VKUARM_fake_script)()
+local function LJCQ_fake_script() -- LMB.LocalScript 
+	local script = Instance.new('LocalScript', LMB)
+
+	local Key = script.Parent
+	local toggle = false
+	local uis = game:GetService("UserInputService")
+
+	uis.InputBegan:Connect(function(input, gameprocessedevent)
+		if input.UserInputType==Enum.UserInputType.MouseButton1 then do
+				wait()
+				Key.TextColor3 = Color3.fromRGB(18, 18, 18)
+				Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			end
+		end
+
+		wait(0.2)
+
+		if input.UserInputType==Enum.UserInputType.MouseButton1 then do
+				wait()
+				Key.TextColor3 = Color3.fromRGB(225,225,225)
+				Key.BackgroundColor3 = Color3.fromRGB(18, 18, 18)	
+			end
+		end
+	end)
+
+	
+end
+coroutine.wrap(LJCQ_fake_script)()
+local function TRDAFP_fake_script() -- RMB.LocalScript 
+	local script = Instance.new('LocalScript', RMB)
+
+	local Key = script.Parent
+	local toggle = false
+	local uis = game:GetService("UserInputService")
+
+	uis.InputBegan:Connect(function(input, gameprocessedevent)
+		if input.UserInputType==Enum.UserInputType.MouseButton2 then do
+				wait()
+				Key.TextColor3 = Color3.fromRGB(18, 18, 18)
+				Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			end
+		end
+
+		wait(0.2)
+
+		if input.UserInputType==Enum.UserInputType.MouseButton2 then do
+				wait()
+				Key.TextColor3 = Color3.fromRGB(225,225,225)
+				Key.BackgroundColor3 = Color3.fromRGB(18, 18, 18)	
+			end
+		end
+	end)
+
+	
+end
+coroutine.wrap(TRDAFP_fake_script)()
+local function YLVDVO_fake_script() -- SpaceBar.LocalScript 
+	local script = Instance.new('LocalScript', SpaceBar)
+
+	local Key = script.Parent
+	local toggle = false
+	local uis = game:GetService("UserInputService")
+
+	uis.InputBegan:Connect(function(key, gp)
+		task.spawn(function()
+			while uis:IsKeyDown(Enum.KeyCode.Space) do
+				Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Key.TextColor3 = Color3.fromRGB(18, 18, 18)
+				wait()
+			end
+			Key.TextColor3 = Color3.fromRGB(225,225,225)
+			Key.BackgroundColor3 = Color3.fromRGB(18,18,18)
+		end)
+	end)
+	
+end
+coroutine.wrap(YLVDVO_fake_script)()
+local function DRHB_fake_script() -- FPS.LocalScript 
+	local script = Instance.new('LocalScript', FPS)
+
+	local RunService = game:GetService("RunService")
+	local FpsLabel = script.Parent
+	local TimeFunction = RunService:IsRunning() and time or os.clock
+
+	local LastIteration, Start
+	local FrameUpdateTable = {}
+
+	local function HeartbeatUpdate()
+		LastIteration = TimeFunction()
+		for Index = #FrameUpdateTable, 1, -1 do
+			FrameUpdateTable[Index + 1] = FrameUpdateTable[Index] >= LastIteration - 1 and FrameUpdateTable[Index] or nil
+		end
+
+		FrameUpdateTable[1] = LastIteration
+		FpsLabel.Text = tostring(math.floor(TimeFunction() - Start >= 1 and #FrameUpdateTable or #FrameUpdateTable / (TimeFunction() - Start))) .. " FPS"
+	end
+
+	Start = TimeFunction()
+	RunService.Heartbeat:Connect(HeartbeatUpdate)
+	
+end
+coroutine.wrap(DRHB_fake_script)()
+local function ZDVPIY_fake_script() -- CPS.LocalScript 
+	local script = Instance.new('LocalScript', CPS)
+
+	local key = script.Parent
+	local BUFFER_SIZE = 1; -- seconds to get running average for
+
+	local counters = table.create(BUFFER_SIZE, 0)
+	local current = 1; -- lua is 1-indexed
+
+	local last = time(); -- init() equivallent
+
+	-- update() equivallent
+	-- could use Stepped or Heartbeat here too but whatever
+	game:GetService("RunService").RenderStepped:Connect(function()
+		local now = time()
+
+		while now - last >= 1 do
+			last += 1
+			current = (current % BUFFER_SIZE) + 1 -- lua is 1-indexed
+			counters[current] = 0;
+		end
+	end)
+
+	local uis = game:GetService("UserInputService")
+
+	uis.InputBegan:Connect(function(input, gameprocessedevent)
+		if input.UserInputType==Enum.UserInputType.MouseButton1 then do
+				wait()
+				counters[current] = counters[current] + 1;
+			end
+		end
+	end)
+
+
+	local function Average()
+		local sum = 0
+		for i = 1, BUFFER_SIZE do
+			sum += counters[i];
+		end
+		return sum
+	end
+
+	task.spawn(function()
+		while wait() do
+			key.Text = Average().." CPS"
+		end
+	end)
+	
+end
+coroutine.wrap(ZDVPIY_fake_script)()
+local function VLPQ_fake_script() -- Time.LocalScript 
+	local script = Instance.new('LocalScript', Time)
+
+	local Key = script.Parent
+
+	local stringtext = "%I, %M, %S, %p"
+	task.spawn(function()
+		while task.wait() do
+			Key.Text = os.date(stringtext)
+		end
+	end)
+	
+end
+coroutine.wrap(VLPQ_fake_script)()
