@@ -1,0 +1,16 @@
+repeat wait() until game:IsLoaded()
+
+game:GetService("Players").LocalPlayer.Idled:Connect(function()
+    game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+end)
+
+if game.PlaceId == 155615604 then
+	local skywall = game.Workspace.BOUNDARY
+
+for _, object in ipairs(skywall:GetChildren())  do
+  if object:IsA("Part") then
+    object.Transparency = 0.7
+    object.BrickColor = BrickColor.new("Cyan")
+  end
+end
+end
